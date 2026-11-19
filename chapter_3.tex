@@ -17,8 +17,7 @@ Y = W \ast X + b,
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=\linewidth]{main_mosquito_iou_explainer.png}
-\caption{Illustration of Intersection over Union (IoU) for mosquito detection.}
+\caption{Illustration of IoU taken from the Aedes egg dataset.}
 \label{fig:iou_explainer}
 \end{figure}
 where $\ast$ denotes the convolution operation. Each filter generates a corresponding output channel that encodes a specific learned visual representation, allowing the network to achieve translation invariance and parameter sharing.
@@ -66,8 +65,7 @@ To identify which filters contribute minimally to the network's predictive perfo
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=\linewidth]{main_mosquito_iou_explainer.png}
-\caption{Illustration of Intersection over Union (IoU) for mosquito detection.}
+\caption{Illustration of IoU taken from the Aedes egg dataset.}
 \label{fig:iou_explainer}
 \end{figure}
 where $w_{i,j}$ represents the individual weight parameters within the $i$-th filter. Filters with a smaller L1-norm magnitude are considered to possess less structural importance and contribute less to the propagated feature representation. These filters are therefore selected as candidates for removal.
@@ -79,8 +77,7 @@ C_{\mathrm{retained}} = C(1-p).
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=\linewidth]{main_mosquito_iou_explainer.png}
-\caption{Illustration of Intersection over Union (IoU) for mosquito detection.}
+\caption{Illustration of IoU taken from the Aedes egg dataset.}
 \label{fig:iou_explainer}
 \end{figure}
 
@@ -91,8 +88,7 @@ P = K^{2} \times C_{\mathrm{in}} \times C_{\mathrm{out}}.
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=\linewidth]{main_mosquito_iou_explainer.png}
-\caption{Illustration of Intersection over Union (IoU) for mosquito detection.}
+\caption{Illustration of IoU taken from the Aedes egg dataset.}
 \label{fig:iou_explainer}
 \end{figure}
 
@@ -104,8 +100,7 @@ P = 3^{2} \times 64 \times 100 = 57,\!600.
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=\linewidth]{main_mosquito_iou_explainer.png}
-\caption{Illustration of Intersection over Union (IoU) for mosquito detection.}
+\caption{Illustration of IoU taken from the Aedes egg dataset.}
 \label{fig:iou_explainer}
 \end{figure}
 
@@ -117,8 +112,7 @@ C_{\mathrm{retained}} = 100(1-0.20)=80.
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=\linewidth]{main_mosquito_iou_explainer.png}
-\caption{Illustration of Intersection over Union (IoU) for mosquito detection.}
+\caption{Illustration of IoU taken from the Aedes egg dataset.}
 \label{fig:iou_explainer}
 \end{figure}
 
@@ -130,8 +124,7 @@ P_{\mathrm{pruned}} = 3^{2} \times 64 \times 80 = 46,\!080,
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=\linewidth]{main_mosquito_iou_explainer.png}
-\caption{Illustration of Intersection over Union (IoU) for mosquito detection.}
+\caption{Illustration of IoU taken from the Aedes egg dataset.}
 \label{fig:iou_explainer}
 \end{figure}
 
@@ -158,8 +151,7 @@ p_i(z_i,T) =
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=\linewidth]{main_mosquito_iou_explainer.png}
-\caption{Illustration of Intersection over Union (IoU) for mosquito detection.}
+\caption{Illustration of IoU taken from the Aedes egg dataset.}
 \label{fig:iou_explainer}
 \end{figure}
 
@@ -173,8 +165,7 @@ The discrepancy between the teacher and student distributions is measured using 
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=\linewidth]{main_mosquito_iou_explainer.png}
-\caption{Illustration of Intersection over Union (IoU) for mosquito detection.}
+\caption{Illustration of IoU taken from the Aedes egg dataset.}
 \label{fig:iou_explainer}
 \end{figure}
 
@@ -196,8 +187,7 @@ p_i^{\mathcal{T}}
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=\linewidth]{main_mosquito_iou_explainer.png}
-\caption{Illustration of Intersection over Union (IoU) for mosquito detection.}
+\caption{Illustration of IoU taken from the Aedes egg dataset.}
 \label{fig:iou_explainer}
 \end{figure}
 
@@ -215,8 +205,7 @@ Let $F^{\mathcal{T}}$ and $F^{\mathcal{S}}$ denote corresponding feature maps fr
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=\linewidth]{main_mosquito_iou_explainer.png}
-\caption{Illustration of Intersection over Union (IoU) for mosquito detection.}
+\caption{Illustration of IoU taken from the Aedes egg dataset.}
 \label{fig:iou_explainer}
 \end{figure}
 
@@ -234,8 +223,7 @@ F_i^{\mathcal{T}}
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=\linewidth]{main_mosquito_iou_explainer.png}
-\caption{Illustration of Intersection over Union (IoU) for mosquito detection.}
+\caption{Illustration of IoU taken from the Aedes egg dataset.}
 \label{fig:iou_explainer}
 \end{figure}
 
@@ -265,8 +253,7 @@ The overall distillation objective can be expressed as
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=\linewidth]{main_mosquito_iou_explainer.png}
-\caption{Illustration of Intersection over Union (IoU) for mosquito detection.}
+\caption{Illustration of IoU taken from the Aedes egg dataset.}
 \label{fig:iou_explainer}
 \end{figure}
 
@@ -291,8 +278,7 @@ At the prediction level, an assignment between teacher and student queries can b
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=\linewidth]{main_mosquito_iou_explainer.png}
-\caption{Illustration of Intersection over Union (IoU) for mosquito detection.}
+\caption{Illustration of IoU taken from the Aedes egg dataset.}
 \label{fig:iou_explainer}
 \end{figure}
 
@@ -312,8 +298,7 @@ H_k^{\mathcal{T}}
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=\linewidth]{main_mosquito_iou_explainer.png}
-\caption{Illustration of Intersection over Union (IoU) for mosquito detection.}
+\caption{Illustration of IoU taken from the Aedes egg dataset.}
 \label{fig:iou_explainer}
 \end{figure}
 
@@ -333,8 +318,7 @@ q = \text{clip}\left( \left\lfloor \frac{x}{S} \right\rceil + Z, \; q_{\min}, \;
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=\linewidth]{main_mosquito_iou_explainer.png}
-\caption{Illustration of Intersection over Union (IoU) for mosquito detection.}
+\caption{Illustration of IoU taken from the Aedes egg dataset.}
 \label{fig:iou_explainer}
 \end{figure}
 where $S \in \mathbb{R}^{+}$ is the positive scale factor, $Z \in \mathbb{Z}$ is the integer zero-point offset, and $\lfloor \cdot \rceil$ represents rounding to the nearest integer. For signed $\text{INT8}$, the discrete bounds are $[q_{\min}, q_{\max}] = [-128, 127]$ \cite{Krishnamoorthi2018}. 
@@ -346,8 +330,7 @@ During inference, approximate floating-point values $\hat{x}$ are recovered via 
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=\linewidth]{main_mosquito_iou_explainer.png}
-\caption{Illustration of Intersection over Union (IoU) for mosquito detection.}
+\caption{Illustration of IoU taken from the Aedes egg dataset.}
 \label{fig:iou_explainer}
 \end{figure}
 
@@ -380,7 +363,7 @@ To rigorously assess the performance of the object detection models before and a
 \begin{figure}[h]
 \centering
 \includegraphics[width=\linewidth]{main_mosquito_iou_explainer.png}
-\caption{Illustration of Intersection over Union (IoU) for mosquito detection.}
+\caption{Illustration of IoU taken from the Aedes egg dataset.}
 \label{fig:iou_explainer}
 \end{figure}
 \begin{equation}
@@ -389,8 +372,7 @@ To rigorously assess the performance of the object detection models before and a
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=\linewidth]{main_mosquito_iou_explainer.png}
-\caption{Illustration of Intersection over Union (IoU) for mosquito detection.}
+\caption{Illustration of IoU taken from the Aedes egg dataset.}
 \label{fig:iou_explainer}
 \end{figure}
 
@@ -401,8 +383,7 @@ A prediction is classified as a True Positive (TP) if the IoU exceeds a predefin
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=\linewidth]{main_mosquito_iou_explainer.png}
-\caption{Illustration of Intersection over Union (IoU) for mosquito detection.}
+\caption{Illustration of IoU taken from the Aedes egg dataset.}
 \label{fig:iou_explainer}
 \end{figure}
 \begin{equation}
@@ -411,8 +392,7 @@ A prediction is classified as a True Positive (TP) if the IoU exceeds a predefin
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=\linewidth]{main_mosquito_iou_explainer.png}
-\caption{Illustration of Intersection over Union (IoU) for mosquito detection.}
+\caption{Illustration of IoU taken from the Aedes egg dataset.}
 \label{fig:iou_explainer}
 \end{figure}
 
@@ -423,8 +403,7 @@ Precision quantifies the accuracy of the positive predictions, while Recall quan
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=\linewidth]{main_mosquito_iou_explainer.png}
-\caption{Illustration of Intersection over Union (IoU) for mosquito detection.}
+\caption{Illustration of IoU taken from the Aedes egg dataset.}
 \label{fig:iou_explainer}
 \end{figure}
 
@@ -442,5 +421,6 @@ Mean Average Precision (mAP) is subsequently derived by calculating the mean of 
 
 
 \end{itemize}
+
 
 
