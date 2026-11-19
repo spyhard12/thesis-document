@@ -1,0 +1,52 @@
+\begin{tabular}{cclcccc}
+\toprule
+& & & \multicolumn{4}{c}{\textbf{Pruned Module + KD Performance}} \\
+\cmidrule(lr){4-7}
+\textbf{Model} & \textbf{Ratio} & \textbf{Metric} & \textbf{Backbone} & \textbf{Neck / Enc.} & \textbf{Head} & \textbf{All Modules} \\
+\midrule
+
+% ==================== YOLOv8n ====================
+\multirow{6}{*}{YOLOv8n \cite{yolov8}} 
+& \multirow{2}{*}{20\%} 
+& Gained mAP ($\Delta$) & +0.003 & +0.006 & +0.006 & +0.012 \\
+& & Recovery Rate (\%)    & 69.45\% & 48.47\% & \textbf{70.91\%} & 36.05\% \\
+\cmidrule(lr){2-7}
+& \multirow{2}{*}{40\%} 
+& Gained mAP ($\Delta$) & +0.010 & +0.014 & +0.014 & \textbf{+0.021} \\
+& & Recovery Rate (\%)    & \textbf{52.67\%} & 38.28\% & 49.43\% & 29.23\% \\
+\cmidrule(lr){2-7}
+& \multirow{2}{*}{60\%} 
+& Gained mAP ($\Delta$) & +0.016 & \textbf{+0.022} & +0.017 & \textbf{+0.022} \\
+& & Recovery Rate (\%)    & \textbf{37.44\%} & 30.72\% & 30.00\% & 16.17\% \\
+\midrule
+
+% ==================== YOLOv4 ====================
+\multirow{6}{*}{YOLOv4 \cite{Bochkovskiy2020YOLOv4}} 
+& \multirow{2}{*}{20\%} 
+& Gained mAP ($\Delta$) & +0.003 & +0.006 & +0.005 & +0.013 \\
+& & Recovery Rate (\%)    & 61.67\% & 37.83\% & \textbf{52.22\%} & 32.44\% \\
+\cmidrule(lr){2-7}
+& \multirow{2}{*}{40\%} 
+& Gained mAP ($\Delta$) & +0.011 & +0.013 & +0.013 & \textbf{+0.018} \\
+& & Recovery Rate (\%)    & \textbf{49.44\%} & 31.04\% & 37.50\% & 22.55\% \\
+\cmidrule(lr){2-7}
+& \multirow{2}{*}{60\%} 
+& Gained mAP ($\Delta$) & +0.019 & +0.020 & +0.018 & \textbf{+0.023} \\
+& & Recovery Rate (\%)    & \textbf{34.73\%} & 25.06\% & 25.00\% & 14.77\% \\
+\midrule
+
+% ==================== RT-DETR ====================
+\multirow{6}{*}{RT-DETR \cite{Zhao2023RTDETR}} 
+& \multirow{2}{*}{20\%} 
+& Gained mAP ($\Delta$) & +0.004 & +0.007 & +0.006 & +0.014 \\
+& & Recovery Rate (\%)    & 68.20\% & 45.30\% & \textbf{69.50\%} & 32.10\% \\
+\cmidrule(lr){2-7}
+& \multirow{2}{*}{40\%} 
+& Gained mAP ($\Delta$) & +0.011 & +0.018 & +0.014 & \textbf{+0.024} \\
+& & Recovery Rate (\%)    & \textbf{51.40\%} & 37.60\% & 47.20\% & 26.40\% \\
+\cmidrule(lr){2-7}
+& \multirow{2}{*}{60\%} 
+& Gained mAP ($\Delta$) & +0.019 & \textbf{+0.027} & +0.020 & +0.025 \\
+& & Recovery Rate (\%)    & \textbf{35.80\%} & 28.90\% & 28.10\% & 14.80\% \\
+\bottomrule
+\end{tabular}

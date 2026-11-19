@@ -1,0 +1,23 @@
+\begin{tabular}{llccccc}
+\toprule
+\textbf{Dataset} & \textbf{Model} & \textbf{Params (M)} & \textbf{mAP50} & \textbf{MAE} &\textbf{ Pearson's \textit{r}} & \textbf{FPS} \\
+\midrule
+
+\multirow{3}{*}{Aedes aegypti Eggs \cite{vicente2024aedesaegyptieggcounting}} 
+  & YOLOv8n \cite{yolov8} & 43.63 & 0.325 & 7.10 & \textbf{0.996} & \textbf{21.38} \\
+  & YOLOv4 \cite{Bochkovskiy2020YOLOv4} & 62.00 & 0.310  & 6.80  & 0.991 & 14.92 \\
+  & RT-DETR \cite{Zhao2023RTDETR} & 81.00 & \textbf{0.431} & \textbf{6.20}   & 0.987 & 18.20 \\
+\midrule
+
+\multirow{3}{*}{CoNSeP \cite{Bakshi2025}} 
+  & YOLOv8n \cite{yolov8} & 3.01  & \textbf{0.518} & \textbf{4.63}  & \textbf{0.925} & 32.00 \\
+  & YOLOv4 \cite{Bochkovskiy2020YOLOv4} & 6.00  & 0.505 & 4.85  & 0.918 & 28.00 \\
+  & RT-DETR \cite{Zhao2023RTDETR} & 31.80 & 0.495 & 5.10 & 0.912 & \textbf{38.00} \\
+  \midrule
+
+\multirow{3}{*}{SGC \cite{Tyagi2023}} 
+  & YOLOv8n \cite{yolov8} & 45.00 & 0.847 & \textbf{347.2} & 0.740  & \textbf{85.00} \\
+  & YOLOv4 \cite{Bochkovskiy2020YOLOv4} & 68.00 & \textbf{0.890}  & 400.0 & 0.740  & 65.00 \\
+  & RT-DETR \cite{Zhao2023RTDETR} & 88.00 & 0.810 & 430.0 & \textbf{0.742} & 20.00 \\
+\bottomrule
+\end{tabular}

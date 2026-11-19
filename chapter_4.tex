@@ -1,0 +1,175 @@
+\chapter{Methodology}
+\label{sec:methodology}
+
+This chapter enumerates and discusses the specific steps and activities that will be performed to accomplish the objectives of the research. The methodology is structured sequentially to directly align with the specific research objectives, beginning with dataset preparation and baseline training, followed by the development of the compression pipeline, physical deployment on edge hardware, and concluding with a comprehensive evaluation of performance trade-offs.
+
+\section{Dataset Preparation and Baseline Establishment}
+The first phase addresses the objective of analyzing baseline performance across diverse high-density domains. This involves preparing the data and training the uncompressed object detection architectures to establish a performance ceiling.
+
+\subsection{Datasets}
+Experiments utilize three small-object detection datasets with splits following their source papers. All images are resized to $640\times640$ pixels while strictly preserving each paper's original train, validation, and test splits.
+
+\subsubsection{\textit{Aedes aegypti} Egg Dataset}
+
+The \textit{Aedes aegypti} egg dataset \cite{vicente2024aedesaegyptieggcounting} was developed to support automated mosquito egg detection for vector surveillance. The dataset contains 435 images acquired from both field-collected and laboratory-generated mosquito eggs, with a total of 12,513 manually annotated egg instances. Of these images, 123 correspond to eggs collected directly from field ovitraps, while the remaining 124 images contain first-generation (F1) laboratory eggs. The dataset follows a 70/15/15 split for training, validation, and testing.
+
+Field eggs were collected in Campo Grande, Mato Grosso do Sul, Brazil, using ovitraps. Wooden pallets partially submerged in hay-infused water were used to encourage oviposition. After collection, the eggs underwent a controlled maturation process inside a biological incubator. Viable eggs were subsequently hatched and reared to adulthood under laboratory conditions to produce the F1 generation, whose eggs were collected using the same ovitrap methodology. This collection process provides images representing both naturally occurring and laboratory-controlled egg populations.
+
+Prior to maturation, all egg samples were imaged using a Leica MC170 HD stereomicroscope. Individual mosquito eggs were manually annotated for object detection using Roboflow and exported in the COCO JSON format. The dataset is challenging because mosquito eggs occupy only a small number of pixels and often appear in dense clusters with varying orientations and illumination conditions.
+
+\subsubsection{Sorghum-Grain-Count Dataset}
+
+The Sorghum-Grain-Count (SGC) dataset \cite{Bakshi2025} was developed for dense grain detection and counting in sorghum panicles. The complete dataset consists of images collected from 316 genotypes of the Sorghum Association Panel (SAP). At physiological maturity, four panicles were collected from each genotype and imaged using a custom-built imaging system equipped with a Canon EOS Rebel SL1 camera. Images were captured from both the front and back of each panicle, with and without flash, to account for variations in illumination and grain visibility. After imaging, the grains were manually separated into quadrants and photographed individually, while machine-based seed counts were recorded to provide ground-truth grain counts.
+
+To support object detection, a representative subset consisting of 100 diverse genotypes was manually annotated using bounding boxes. The annotations were initially created using LabelMe before being converted to COCO and YOLO formats through Roboflow. Following the dataset's predefined split, this study utilizes 74 training panicles from 70 genotypes, 25 development panicles, and 25 test panicles, totaling 124 annotated panicles from 100 genotypes. Individual panicles contain approximately 30 to 3,500 grains, with an average of about 1,400 grains per image. The large number of grains in each image, frequent occlusions, and variations in grain appearance and panicle structure make the SGC dataset a good benchmark for dense small-object detection.
+
+\subsubsection{CoNSeP Dataset}
+
+The Colorectal Nuclear Segmentation and Phenotypes (CoNSeP) dataset, utilized following the preprocessing pipeline of DeGPR \cite{Tyagi2023}, is a publicly available histopathology dataset consisting of hematoxylin and eosin (H\&E) stained colorectal adenocarcinoma images. Each image has a resolution of $1000\times1000$ pixels and was acquired at $40\times$ magnification from whole-slide images of 16 colorectal adenocarcinoma patients. The dataset contains 41 images with a total of 24,319 manually annotated nuclei belonging to three cell categories: inflammatory cells, epithelial cells, and spindle cells. The original annotations were produced and verified by expert pathologists to ensure high annotation quality.
+
+Since CoNSeP was originally developed as a nuclear segmentation dataset, the segmentation masks were converted into bounding box annotations following the preprocessing methodology of DeGPR to enable object detection. Each $1000\times1000$ image was further divided into four $500\times500$ subimages. The high density of nuclei, frequent cell overlap, and variations in staining and nuclear appearance make the CoNSeP dataset a challenging benchmark for dense small-object detection.
+
+
+
+\subsection{Baseline Training}
+The YOLOv4, YOLOv8n, and RT-DETR models are initialized from COCO pretrained weights and fine-tuned on each dataset using standardized hyperparameters selected through systematic tuning. The configuration includes a learning rate of 0.001, momentum of 0.95, weight decay of 0.0001, an SGD optimizer, and 100 to 300 training epochs. Tuning explored learning rates of \{0.001, 0.005, 0.01\}, momentum values of \{0.9, 0.95, 0.97\}, weight decay values of \{0.0001, 0.0005, 0.001\}, and epoch counts of \{100, 150, 200, 250, 300\}. The configuration yielding the best validation performance was consistently selected for all models and datasets. All baseline training and initial measurements are conducted on a standard workstation equipped with a discrete GPU.
+
+\section{Development of the Multi-Step Compression Pipeline}
+The second phase addresses the objective of systematically reducing model complexity while preserving counting accuracy. This is achieved through a multi-step pipeline integrating architecture-aware pruning, knowledge distillation, and quantization.
+
+\subsection{Architecture-Aware Structured Pruning}
+Structured pruning is applied according to the architectural decomposition of each model family to analyze the sensitivity of different modules within the detection pipeline. Channel-level structured pruning is used to remove entire convolutional filters based on $L_1$-norm magnitude ranking, identifying the least structurally important channels. 
+
+For YOLO-based models (YOLOv4 and YOLOv8n), pruning is applied to three primary components: the backbone for feature extraction, the neck for multi-scale aggregation, and the head for final predictions. For the transformer-based RT-DETR, pruning regions are defined by its specific components: the convolutional backbone, the transformer encoder-decoder layers, and the final prediction head. Pruning ratios of 20\%, 40\%, and 60\% are evaluated to study the effects of increasing compression levels. 
+
+\subsection{Multi-Module Pruning}
+In addition to isolating single modules, multi-module pruning is applied to evaluate the combined effects of removing parameters from multiple architectural components simultaneously. For YOLO-based models, combinations include backbone and neck, backbone and head, neck and head, as well as the full combination of all three. For RT-DETR, combinations include backbone and transformer layers, backbone and prediction head, transformer and head, and the full architectural stack. Each pruned configuration is subsequently fine-tuned for 10 epochs using the baseline hyperparameters to recover predictive performance.
+
+\subsection{Knowledge Distillation}
+
+Knowledge distillation was performed after structured pruning to evaluate whether the performance degradation caused by pruning could be recovered through knowledge transferred from the corresponding unpruned baseline models. For each architecture and dataset, the original baseline model was used as the teacher, while each pruned configuration was used as the student. The same 20\%, 40\%, and 60\% pruning ratios evaluated during the structured pruning stage were subjected to knowledge distillation. Each pruned student was trained for 100 epochs while the teacher parameters remained fixed. The student retained its pruned architecture throughout the distillation process.
+
+The distillation procedure combined the model's standard detection objective with knowledge transferred from the teacher. The general training objective was expressed as
+
+$$
+\mathcal{L}_{total}
+=
+\mathcal{L}_{task}
++
+\lambda_{resp}\mathcal{L}_{KD}^{resp}
++
+\lambda_{feat}\mathcal{L}_{KD}^{feat},
+$$
+
+where $\mathcal{L}*{task}$ denotes the architecture-specific detection objective, $\mathcal{L}*{KD}^{resp}$ represents response-based distillation, and $\mathcal{L}_{KD}^{feat}$ represents feature-based distillation. The specific feature representation used for distillation differed according to the detector architecture.
+
+\subsubsection{YOLO-Based Knowledge Distillation}
+
+For the YOLO-based models, distillation was applied to the pruned backbone, neck, head, and combined backbone-neck-head configurations. Response-based distillation transferred information from the teacher's detection outputs, while feature-based distillation encouraged the pruned student to preserve useful intermediate representations from the teacher.
+
+\subsubsection{RT-DETR Knowledge Distillation}
+
+For RT-DETR, distillation was applied to the pruned backbone, transformer, head, and combined module configurations. Response-based distillation was performed using the teacher's detection outputs, while encoder feature distillation was used to transfer intermediate representations from the teacher's encoder to the pruned student's encoder. The encoder feature loss was defined as
+
+$$
+\mathcal{L}_{KD}^{enc}
+=
+\frac{1}{N}
+\sum_{i=1}^{N}
+\left(F_i^{T}-\phi(F_i^{S})\right)^2,
+$$
+
+where $F^{T}$ and $F^{S}$ denote the teacher and student encoder features, respectively, and $\phi$ aligns the student representation with the teacher representation when their dimensions differ.
+
+The distilled models were evaluated on their parameter count and model size to verify that knowledge distillation did not alter the compression level of the student. Performance recovery was quantified using the gained mAP and recovery rate:
+
+$$
+\Delta mAP_{KD}
+=
+mAP_{KD}-mAP_{Pruned},
+$$
+
+$$
+Recovery\ Rate
+=
+\frac{
+mAP_{KD}-mAP_{Pruned}
+}{
+mAP_{Baseline}-mAP_{Pruned}
+}
+\times100\%.
+$$
+
+
+
+\subsection{Quantization}
+
+Following structured pruning and knowledge distillation, network quantization was applied as the final stage of the multi-step compression pipeline. Quantization reduces the numerical precision of the network parameters and intermediate activations from 32-bit floating-point ($\text{FP32}$) to 8-bit integer ($\text{INT8}$) representation[cite: 7, 10, 40]. This conversion reduces memory consumption by approximately 75\% and enables integer arithmetic execution on edge hardware platforms[cite: 9, 10, 40].
+
+To avoid the computational cost and hyperparameter sensitivity of full quantization-aware retraining, Post-Training Quantization (PTQ) was utilized[cite: 9, 40, 43]. The transformation of continuous tensor values $x$ into discrete quantized integers $q$ is defined by uniform linear quantization:
+
+$$
+q = \text{clip}\left(\left\lfloor \frac{x}{S} \right\rceil + Z, \; q_{min}, \; q_{max}\right),
+$$
+
+where $S$ represents the scale factor, $Z$ denotes the zero-point integer offset, $\lfloor \cdot \rceil$ indicates the nearest rounding operation, and $[q_{min}, q_{max}]$ denotes the discrete integer range, defined as $[-128, 127]$ for signed $\text{INT8}$ or $[0, 255]$ for unsigned $\text{INT8}$[cite: 10, 41, 42]. During inference, the approximate floating-point values are recovered through dequantization:
+
+$$
+\hat{x} = S \cdot (q - Z).
+$$
+
+For static quantization, the dynamic ranges of intermediate activations were determined using a calibration set of representative images drawn from the training split[cite: 9, 40, 43]. Symmetric per-channel quantization was applied to the convolutional and linear weights to preserve directional fidelity, while asymmetric per-tensor calibration was utilized for activations to account for non-negative feature activations resulting from standard activation functions[cite: 41, 42].
+
+\subsubsection{YOLO-Based Quantization}
+
+For YOLOv4 and YOLOv8n, calibration was conducted across all convolutional modules, residual bottlenecks, and multi-scale concatenation nodes within the neck and head architectures[cite: 47, 48]. Special consideration was given to the feature aggregation layers, where disparate activation ranges from shallow and deep branches converge, ensuring that the calibrated scaling factors did not truncate the low-magnitude activation responses critical for small-object localization[cite: 44, 47].
+
+\subsubsection{RT-DETR Quantization}
+
+For RT-DETR, quantization was applied to both the convolutional backbone and the linear projection modules of the transformer encoder-decoder[cite: 8, 54]. Linear layers within the multi-head self-attention and cross-attention blocks were quantized to $\text{INT8}$, while the softmax normalization and positional embeddings were retained in floating-point precision to avoid numerical instability in the attention score distributions[cite: 41, 51, 52].
+
+\subsubsection{Quantization Performance Evaluation}
+
+The quantized models were evaluated across baseline, pruned, and distilled configurations to measure the cumulative impact of precision reduction on small-object detection fidelity. Detection degradation was quantified using the net change in $\text{mAP}$:
+
+$$
+\Delta mAP_{Quant} = mAP_{Quant} - mAP_{Pre-Quant},
+$$
+
+where $mAP_{Pre-Quant}$ denotes the performance of the corresponding model prior to quantization (either uncompressed baseline, pruned, or distilled). In addition to precision metrics, storage reduction was measured through physical file size in megabytes ($\text{MB}$), serving as direct input for the subsequent hardware deployment phase.
+
+\section{Edge Hardware Deployment and Testing}
+The third phase addresses the objective of testing the optimized models directly on resource-constrained hardware. To ensure practical relevance, the compressed models are exported to edge-compatible formats and deployed entirely locally.
+
+Testing is conducted on two distinct hardware profiles: a Samsung mobile phone and a Raspberry Pi single-board computer. The evaluation strictly relies on on-device processing capabilities, operating completely offline without the requirement of an active internet connection or a supplementary cloud environment. By ensuring that no image data or inference tasks are offloaded to external servers, this localized testing methodology verifies the robustness of the compression pipeline in fully isolated scenarios. This approach facilitates the accurate measurement of realistic device processing bottlenecks while operating under hardware constraints.
+
+\section{Evaluation and Trade-off Analysis}
+The final phase addresses the objective of evaluating the trade-offs between model size, inference speed, and detection reliability. 
+
+Detection reliability is quantified using Mean Average Precision (mAP) and Intersection over Union (IoU) metrics, measuring the model's ability to retain spatial features and accurate bounding box coordinates despite heavy compression. Model complexity is measured by the total parameter count and the physical file size in megabytes. Finally, computational efficiency and latency are measured in Frames Per Second (FPS) and milliseconds per inference on the target edge devices.
+
+These metrics are used to map the explicit trade-offs between accuracy degradation and latency improvements. This analysis provides a structured evaluation of which compression configurations yield the most viable deployment parameters for specific real-world operational constraints.
+
+\subsection{Calendar of Activities}
+
+For the proposal, a Gantt chart showing the schedule of the activities should be added. You can create a table like below, or create a figure. For example:
+
+Table \ref{tab:timetableactivities} shows a Gantt chart of the activities.  Each bullet represents approximately one week worth of activity.
+
+\begin{table}[]
+    \centering
+    \begin{tabular}{l|c|c|c|c|c|c|c|c|c}
+         \toprule
+         & \multicolumn{6}{c|}{2021} & \multicolumn{3}{c}{2022} \\
+         \textbf{Activity} & \textbf{Apr} & \textbf{May} & \textbf{Jun} & \textbf{Jul} & \textbf{Aug} & \textbf{Sep} & \textbf{Jan} & \textbf{Feb} & \textbf{Mar} \\
+         \midrule
+         Data Collection & **** & **** & & & & & & & \\
+         \midrule
+         Software Design & & **** & **** & **** & **** & **** & & & \\
+         \midrule
+         Validation & & & & & & **** & **** & **** & \\
+         \bottomrule
+    \end{tabular}
+    \caption{Gantt Chart of Activities}
+    \label{tab:timetableactivities}
+\end{table}

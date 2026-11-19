@@ -1,0 +1,76 @@
+\centering
+\label{tab:all_models_dataset_rows}
+\small
+\begin{tabular}{cclccc}
+\toprule
+& & & \multicolumn{3}{c}{\textbf{Pruned Module}} \\
+\cmidrule(lr){4-6}
+\textbf{Model} & \textbf{Ratio} & \textbf{Dataset} & \textbf{Backbone} & \textbf{Neck / Encoder} & \textbf{Head} \\
+\midrule
+\multirow{12}{*}{YOLOv8n} 
+& \multirow{4}{*}{20\%} 
+& Aedes a. Eggs & -0.92\% & \textbf{-2.15\%} & -1.54\% \\
+& & CoNSeP        & -0.77\% & \textbf{-2.51\%} & -1.93\% \\
+& & SGC           & -0.71\% & \textbf{-2.24\%} & -1.30\% \\
+\cmidrule(lr){3-6}
+& & \textbf{Avg. $\Delta\text{mAP50}$} & -0.80\% & \textbf{-2.30\%} & -1.59\% \\
+\cmidrule(lr){2-6}
+& \multirow{4}{*}{40\%} 
+& Aedes a. Eggs & -4.00\% & \textbf{-6.46\%} & -5.54\% \\
+& & CoNSeP        & -3.47\% & \textbf{-6.37\%} & -5.02\% \\
+& & SGC           & -2.83\% & \textbf{-6.14\%} & -4.60\% \\
+\cmidrule(lr){3-6}
+& & \textbf{Avg. $\Delta\text{mAP50}$} & -3.43\% & \textbf{-6.32\%} & -5.05\% \\
+\cmidrule(lr){2-6}
+& \multirow{4}{*}{60\%} 
+& Aedes a. Eggs & -9.23\% & \textbf{-15.08\%} & -12.62\% \\
+& & CoNSeP        & -7.34\% & \textbf{-12.16\%} & -9.65\% \\
+& & SGC           & -7.91\% & \textbf{-12.63\%} & -10.51\% \\
+\cmidrule(lr){3-6}
+& & \textbf{Avg. $\Delta\text{mAP50}$} & -8.16\% & \textbf{-13.29\%} & -10.93\% \\
+\midrule
+\multirow{12}{*}{YOLOv4} 
+& \multirow{4}{*}{20\%} 
+& Aedes a. Eggs & -1.29\% & \textbf{-2.58\%} & -1.94\% \\
+& & CoNSeP        & -0.99\% & \textbf{-2.97\%} & -1.98\% \\
+& & SGC           & -0.90\% & \textbf{-2.81\%} & -1.69\% \\
+\cmidrule(lr){3-6}
+& & \textbf{Avg. $\Delta\text{mAP50}$} & -1.06\% & \textbf{-2.79\%} & -1.87\% \\
+\cmidrule(lr){2-6}
+& \multirow{4}{*}{40\%} 
+& Aedes a. Eggs & -4.52\% & \textbf{-7.42\%} & -6.45\% \\
+& & CoNSeP        & -3.96\% & \textbf{-7.92\%} & -5.94\% \\
+& & SGC           & -3.37\% & \textbf{-6.74\%} & -5.39\% \\
+\cmidrule(lr){3-6}
+& & \textbf{Avg. $\Delta\text{mAP50}$} & -3.95\% & \textbf{-7.36\%} & -5.93\% \\
+\cmidrule(lr){2-6}
+& \multirow{4}{*}{60\%} 
+& Aedes a. Eggs & -9.03\% & \textbf{-15.48\%} & -12.90\% \\
+& & CoNSeP        & -9.90\% & \textbf{-14.85\%} & -12.87\% \\
+& & SGC           & -10.11\% & \textbf{-15.73\%} & -13.48\% \\
+\cmidrule(lr){3-6}
+& & \textbf{Avg. $\Delta\text{mAP50}$} & -9.68\% & \textbf{-15.35\%} & -13.08\% \\
+\midrule
+\multirow{12}{*}{RT-DETR} 
+& \multirow{4}{*}{20\%} 
+& Aedes a. Eggs & -1.39\% & \textbf{-3.25\%} & -1.62\% \\
+& & CoNSeP        & -1.41\% & \textbf{-3.03\%} & -1.62\% \\
+& & SGC           & -0.99\% & \textbf{-2.22\%} & -1.23\% \\
+\cmidrule(lr){3-6}
+& & \textbf{Avg. $\Delta\text{mAP50}$} & -1.26\% & \textbf{-2.83\%} & -1.49\% \\
+\cmidrule(lr){2-6}
+& \multirow{4}{*}{40\%} 
+& Aedes a. Eggs & -4.64\% & \textbf{-8.35\%} & -5.34\% \\
+& & CoNSeP        & -4.65\% & \textbf{-8.08\%} & -5.66\% \\
+& & SGC           & -3.09\% & \textbf{-5.93\%} & -4.32\% \\
+\cmidrule(lr){3-6}
+& & \textbf{Avg. $\Delta\text{mAP50}$} & -4.13\% & \textbf{-7.45\%} & -5.11\% \\
+\cmidrule(lr){2-6}
+& \multirow{4}{*}{60\%} 
+& Aedes a. Eggs & -10.67\% & \textbf{-19.95\%} & -13.92\% \\
+& & CoNSeP        & -10.10\% & \textbf{-15.15\%} & -12.73\% \\
+& & SGC           & -6.17\% & \textbf{-10.86\%} & -8.89\% \\
+\cmidrule(lr){3-6}
+& & \textbf{Avg. $\Delta\text{mAP50}$} & -8.98\% & \textbf{-15.32\%} & -11.85\% \\
+\bottomrule
+\end{tabular}
