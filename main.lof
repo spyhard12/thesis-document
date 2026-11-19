@@ -1,8 +1,0 @@
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces \textbf {Qualitative detection and counting results for YOLOv4 under increasing structured pruning levels.} Rows correspond to the Aedes aegypti Egg, CoNSeP, and Sorghum-Grain-Count (SGC) datasets, while columns show ground truth annotations, the baseline YOLOv4 model, and YOLOv4 pruned at 20\%, 40\%, and 60\%. Green bounding boxes represent detected objects counted by the model, while red bounding boxes indicate ground-truth instances that were missed by the detector. As the pruning ratio increases, the number of missed detections (red boxes) grows and the overall detection density decreases, illustrating the impact of aggressive pruning on dense small-object detection and counting. }}{32}{}%
-\addvspace {10\p@ }
-\addvspace {10\p@ }

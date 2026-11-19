@@ -19,13 +19,13 @@ Baseline performance of YOLOv4 \cite{Bochkovskiy2020YOLOv4}, YOLOv8n \cite{yolov
 \scriptsize % Reduce font size
 \renewcommand{\arraystretch}{0.75} % Compress vertical row spacing
 \setlength{\tabcolsep}{4pt} % Compress column spacing
-\label{tab:all_models_dataset_rows}
+
 \input{tables/all_column_separated}
 \end{table}
 
 \subsection{Single-Module Sensitivity Analysis}
 
-To evaluate the structural vulnerability of individual architectural components, structured channel pruning was independently applied to the Backbone, Neck (or Transformer Encoder in RT-DETR), and Detection Head across pruning ratios of 20\%, 40\%, and 60\%. The performance impact across all datasets is summarized in Table~\ref{tab:all_models_dataset_rows}. 
+To evaluate the structural vulnerability of individual architectural components, structured channel pruning was independently applied to the Backbone, Neck (or Transformer Encoder in RT-DETR), and Detection Head across pruning ratios of 20\%, 40\%, and 60\%. The performance impact across all datasets is summarized in Table~\ref{tab:all_models_dataset_rows_a}. 
 
 \subsubsection{Hierarchical Sensitivity of Architectural Modules}
 Across all evaluated detection architectures (YOLOv8n, YOLOv4, and RT-DETR) and datasets, a consistent hierarchical pattern of module sensitivity emerges: 

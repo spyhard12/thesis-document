@@ -14,6 +14,13 @@ Convolutional Neural Networks (CNNs) are the primary architecture for modern com
 \begin{equation}
 Y = W \ast X + b,
 \end{equation}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=\linewidth]{main_mosquito_iou_explainer.png}
+\caption{Illustration of Intersection over Union (IoU) for mosquito detection.}
+\label{fig:iou_explainer}
+\end{figure}
 where $\ast$ denotes the convolution operation. Each filter generates a corresponding output channel that encodes a specific learned visual representation, allowing the network to achieve translation invariance and parameter sharing.
 
 \section{Object Detectors}
@@ -56,6 +63,13 @@ To identify which filters contribute minimally to the network's predictive perfo
 \begin{equation}
 ||W_i||_1 = \sum_{j} |w_{i,j}|,
 \end{equation}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=\linewidth]{main_mosquito_iou_explainer.png}
+\caption{Illustration of Intersection over Union (IoU) for mosquito detection.}
+\label{fig:iou_explainer}
+\end{figure}
 where $w_{i,j}$ represents the individual weight parameters within the $i$-th filter. Filters with a smaller L1-norm magnitude are considered to possess less structural importance and contribute less to the propagated feature representation. These filters are therefore selected as candidates for removal.
 
 After ranking channels according to their importance scores, a pruning ratio $p$ is applied. If a layer initially contains $C$ output channels, the number of retained channels after pruning is given by
@@ -63,10 +77,24 @@ After ranking channels according to their importance scores, a pruning ratio $p$
 C_{\mathrm{retained}} = C(1-p).
 \end{equation}
 
+\begin{figure}[h]
+\centering
+\includegraphics[width=\linewidth]{main_mosquito_iou_explainer.png}
+\caption{Illustration of Intersection over Union (IoU) for mosquito detection.}
+\label{fig:iou_explainer}
+\end{figure}
+
 The removal of channels directly reduces both parameter count and computational complexity. For a convolutional layer with kernel size $K \times K$, $C_{\mathrm{in}}$ input channels, and $C_{\mathrm{out}}$ output channels, the total number of trainable parameters, excluding bias terms, can be expressed as
 \begin{equation}
 P = K^{2} \times C_{\mathrm{in}} \times C_{\mathrm{out}}.
 \end{equation}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=\linewidth]{main_mosquito_iou_explainer.png}
+\caption{Illustration of Intersection over Union (IoU) for mosquito detection.}
+\label{fig:iou_explainer}
+\end{figure}
 
 To illustrate the effect of structured pruning, consider a convolutional layer with $64$ input channels and $100$ output channels. Before pruning, the layer contains
 
@@ -74,17 +102,38 @@ To illustrate the effect of structured pruning, consider a convolutional layer w
 P = 3^{2} \times 64 \times 100 = 57,\!600.
 \end{equation}
 
+\begin{figure}[h]
+\centering
+\includegraphics[width=\linewidth]{main_mosquito_iou_explainer.png}
+\caption{Illustration of Intersection over Union (IoU) for mosquito detection.}
+\label{fig:iou_explainer}
+\end{figure}
+
 Applying a pruning ratio of $20\%$ retains
 
 \begin{equation}
 C_{\mathrm{retained}} = 100(1-0.20)=80.
 \end{equation}
 
+\begin{figure}[h]
+\centering
+\includegraphics[width=\linewidth]{main_mosquito_iou_explainer.png}
+\caption{Illustration of Intersection over Union (IoU) for mosquito detection.}
+\label{fig:iou_explainer}
+\end{figure}
+
 The pruned layer therefore contains
 
 \begin{equation}
 P_{\mathrm{pruned}} = 3^{2} \times 64 \times 80 = 46,\!080,
 \end{equation}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=\linewidth]{main_mosquito_iou_explainer.png}
+\caption{Illustration of Intersection over Union (IoU) for mosquito detection.}
+\label{fig:iou_explainer}
+\end{figure}
 
 representing a $20\%$ reduction in the number of trainable parameters for the layer.
 
@@ -107,6 +156,13 @@ p_i(z_i,T) =
 {\sum_{j=1}^{C} \exp(z_j/T)}.
 \end{equation}
 
+\begin{figure}[h]
+\centering
+\includegraphics[width=\linewidth]{main_mosquito_iou_explainer.png}
+\caption{Illustration of Intersection over Union (IoU) for mosquito detection.}
+\label{fig:iou_explainer}
+\end{figure}
+
 where $C$ is the number of classes. Increasing $T$ produces a softer probability distribution, allowing relative probabilities between classes to convey additional information learned by the teacher.
 
 The discrepancy between the teacher and student distributions is measured using the Kullback--Leibler (KL) divergence:
@@ -114,6 +170,13 @@ The discrepancy between the teacher and student distributions is measured using 
 \begin{equation}
 \mathcal{L}_{\mathrm{KD}}^{\mathrm{resp}} = T^2 D_{\mathrm{KL}}\left(p(\mathbf{z}^{\mathcal{T}}, T)\;||\;p(\mathbf{z}^{\mathcal{S}}, T)\right),
 \end{equation}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=\linewidth]{main_mosquito_iou_explainer.png}
+\caption{Illustration of Intersection over Union (IoU) for mosquito detection.}
+\label{fig:iou_explainer}
+\end{figure}
 
 where
 
@@ -131,6 +194,13 @@ p_i^{\mathcal{T}}
 \right).
 \end{equation}
 
+\begin{figure}[h]
+\centering
+\includegraphics[width=\linewidth]{main_mosquito_iou_explainer.png}
+\caption{Illustration of Intersection over Union (IoU) for mosquito detection.}
+\label{fig:iou_explainer}
+\end{figure}
+
 The factor $T^2$ compensates for the reduced gradient magnitude introduced by temperature scaling. Minimizing this loss encourages the student to approximate the teacher's output distribution.
 
 \subsection{Intermediate Feature-Based Distillation}
@@ -143,6 +213,13 @@ Let $F^{\mathcal{T}}$ and $F^{\mathcal{S}}$ denote corresponding feature maps fr
 \hat{F}^{\mathcal{S}} = \phi(F^{\mathcal{S}}).
 \end{equation}
 
+\begin{figure}[h]
+\centering
+\includegraphics[width=\linewidth]{main_mosquito_iou_explainer.png}
+\caption{Illustration of Intersection over Union (IoU) for mosquito detection.}
+\label{fig:iou_explainer}
+\end{figure}
+
 The feature alignment loss can then be formulated using mean squared error (MSE):
 
 \begin{equation}
@@ -154,6 +231,13 @@ F_i^{\mathcal{T}}
 \hat{F}_i^{\mathcal{S}}
 \right)^2,
 \end{equation}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=\linewidth]{main_mosquito_iou_explainer.png}
+\caption{Illustration of Intersection over Union (IoU) for mosquito detection.}
+\label{fig:iou_explainer}
+\end{figure}
 
 where $N$ represents the total number of feature elements. Minimizing this loss encourages the student to maintain intermediate representations similar to those of the teacher.
 
@@ -179,6 +263,13 @@ The overall distillation objective can be expressed as
 \mathcal{L}_{\mathrm{KD}}^{\mathrm{feat}},
 \end{equation}
 
+\begin{figure}[h]
+\centering
+\includegraphics[width=\linewidth]{main_mosquito_iou_explainer.png}
+\caption{Illustration of Intersection over Union (IoU) for mosquito detection.}
+\label{fig:iou_explainer}
+\end{figure}
+
 where $\mathcal{L}*{\mathrm{task}}$ denotes the object detection loss, while $\lambda*{\mathrm{resp}}$ and $\lambda_{\mathrm{feat}}$ control the contributions of response- and feature-based distillation.
 
 \subsection{Distillation in RT-DETR}
@@ -198,6 +289,13 @@ At the prediction level, an assignment between teacher and student queries can b
 \right),
 \end{equation}
 
+\begin{figure}[h]
+\centering
+\includegraphics[width=\linewidth]{main_mosquito_iou_explainer.png}
+\caption{Illustration of Intersection over Union (IoU) for mosquito detection.}
+\label{fig:iou_explainer}
+\end{figure}
+
 where $N_q$ is the number of object queries and $\mathfrak{S}_{N_q}$ represents the set of possible query permutations. Once corresponding predictions are established, classification and localization information can be transferred between the teacher and student.
 
 Feature-level distillation can similarly be applied to the intermediate representations of the transformer encoder:
@@ -212,6 +310,13 @@ H_k^{\mathcal{T}}
 \right|_2^2,
 \end{equation}
 
+\begin{figure}[h]
+\centering
+\includegraphics[width=\linewidth]{main_mosquito_iou_explainer.png}
+\caption{Illustration of Intersection over Union (IoU) for mosquito detection.}
+\label{fig:iou_explainer}
+\end{figure}
+
 where $N_k$ is the number of feature tokens, $D$ is the embedding dimension, and $\psi(\cdot)$ is a projection function used to align the student representation with the teacher.
 
 \section{Network Quantization}
@@ -225,12 +330,26 @@ The continuous real-valued tensor $x \in [x_{\min}, x_{\max}]$ is mapped to a di
 \begin{equation}
 q = \text{clip}\left( \left\lfloor \frac{x}{S} \right\rceil + Z, \; q_{\min}, \; q_{\max} \right),
 \end{equation}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=\linewidth]{main_mosquito_iou_explainer.png}
+\caption{Illustration of Intersection over Union (IoU) for mosquito detection.}
+\label{fig:iou_explainer}
+\end{figure}
 where $S \in \mathbb{R}^{+}$ is the positive scale factor, $Z \in \mathbb{Z}$ is the integer zero-point offset, and $\lfloor \cdot \rceil$ represents rounding to the nearest integer. For signed $\text{INT8}$, the discrete bounds are $[q_{\min}, q_{\max}] = [-128, 127]$ \cite{Krishnamoorthi2018}. 
 
 During inference, approximate floating-point values $\hat{x}$ are recovered via dequantization:
 \begin{equation}
 \hat{x} = S \cdot (q - Z).
 \end{equation}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=\linewidth]{main_mosquito_iou_explainer.png}
+\caption{Illustration of Intersection over Union (IoU) for mosquito detection.}
+\label{fig:iou_explainer}
+\end{figure}
 
 \subsection{Symmetric versus Asymmetric Schemes}
 
@@ -257,22 +376,57 @@ Applying integer quantization to object detection architectures involves compone
 \end{itemize}
 \section{Evaluation Metrics}
 To rigorously assess the performance of the object detection models before and after compression, standard quantitative metrics are utilized. The foundational metric for spatial localization is Intersection over Union (IoU), which measures the overlap between the predicted bounding box $\mathcal{B}_p$ and the ground truth bounding box $\mathcal{B}_{gt}$:
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=\linewidth]{main_mosquito_iou_explainer.png}
+\caption{Illustration of Intersection over Union (IoU) for mosquito detection.}
+\label{fig:iou_explainer}
+\end{figure}
 \begin{equation}
 \mathrm{IoU} = \frac{\mathrm{Area}(\mathcal{B}_p \cap \mathcal{B}_{gt})}{\mathrm{Area}(\mathcal{B}_p \cup \mathcal{B}_{gt})}.
 \end{equation}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=\linewidth]{main_mosquito_iou_explainer.png}
+\caption{Illustration of Intersection over Union (IoU) for mosquito detection.}
+\label{fig:iou_explainer}
+\end{figure}
 
 A prediction is classified as a True Positive (TP) if the IoU exceeds a predefined threshold and the class prediction is correct. Otherwise, it is classified as a False Positive (FP). Ground truth objects that the model fails to detect are False Negatives (FN). These values are used to calculate Precision and Recall:
 \begin{equation}
 \mathrm{Precision} = \frac{\mathrm{TP}}{\mathrm{TP} + \mathrm{FP}},
 \end{equation}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=\linewidth]{main_mosquito_iou_explainer.png}
+\caption{Illustration of Intersection over Union (IoU) for mosquito detection.}
+\label{fig:iou_explainer}
+\end{figure}
 \begin{equation}
 \mathrm{Recall} = \frac{\mathrm{TP}}{\mathrm{TP} + \mathrm{FN}}.
 \end{equation}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=\linewidth]{main_mosquito_iou_explainer.png}
+\caption{Illustration of Intersection over Union (IoU) for mosquito detection.}
+\label{fig:iou_explainer}
+\end{figure}
 
 Precision quantifies the accuracy of the positive predictions, while Recall quantifies the model's ability to identify all relevant instances. The overall detection capability is summarized using Average Precision (AP), which is calculated as the area under the Precision-Recall curve $p(r)$:
 \begin{equation}
 \mathrm{AP} = \int_{0}^{1} p(r) \, dr.
 \end{equation}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=\linewidth]{main_mosquito_iou_explainer.png}
+\caption{Illustration of Intersection over Union (IoU) for mosquito detection.}
+\label{fig:iou_explainer}
+\end{figure}
 
 Mean Average Precision (mAP) is subsequently derived by calculating the mean of the AP values across all defined object classes, providing a comprehensive single-value metric for overall model reliability.
 
