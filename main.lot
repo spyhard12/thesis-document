@@ -1,0 +1,11 @@
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {4.1}{\ignorespaces Gantt Chart of Activities}}{27}{}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {5.1}{\ignorespaces \textbf {Baseline detection, counting, and efficiency performance of YOLOv8n, YOLOv4, and RT-DETR across the Aedes aegypti Egg, CoNSeP, and Sorghum-Grain-Count (SGC) datasets.}}}{29}{}%
+\contentsline {table}{\numberline {5.2}{\ignorespaces Single-Module $\Delta \text {mAP50 (\%)}$ Performance Loss Across All Models, Pruning Ratios, and Datasets.}}{30}{}%
+\contentsline {table}{\numberline {5.3}{\ignorespaces \textbf {Dataset-averaged Knowledge Distillation performance restoration ($\Delta \text {mAP50}$ gain and recovery rate \%) across YOLOv8n, YOLOv4, and RT-DETR across all pruning ratios.}}}{33}{}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }

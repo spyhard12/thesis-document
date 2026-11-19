@@ -1,0 +1,1231 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+Bakshi%
+\ \protect \BOthers {.}}{%
+Bakshi%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2025}}%
+}]{%
+Bakshi2025}
+\APACinsertmetastar {%
+Bakshi2025}%
+\begin{APACrefauthors}%
+Bakshi, A.%
+, Pramanik, S.%
+, Caragea, D.%
+, Somayanda, I.%
+, Kumar, R.%
+, Bangari, M.%
+\BDBL {}Jagadish, S\BPBI K.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2025}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Sorghum-grain-count: A Large Image Dataset and Benchmark
+  for Sorghum Grain Count Estimation} {Sorghum-grain-count: A large image
+  dataset and benchmark for sorghum grain count estimation}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Smart Agricultural Technology}{12}{}{101218}.
+\newblock
+\begin{APACrefURL}
+  \url{https://www.sciencedirect.com/science/article/pii/S2772375525004496}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.atech.2025.101218} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Beyer%
+\ \protect \BOthers {.}}{%
+Beyer%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2022}}%
+}]{%
+beyer2022knowledge}
+\APACinsertmetastar {%
+beyer2022knowledge}%
+\begin{APACrefauthors}%
+Beyer, L.%
+, Zhai, X.%
+, Royer, A.%
+, Markeeva, L.%
+, Anil, R.%
+\BCBL {}\ \BBA {} Kolesnikov, A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2022}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Knowledge distillation: A good teacher is patient and
+  consistent} {Knowledge distillation: A good teacher is patient and
+  consistent}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {Proceedings of the IEEE/CVF Conference on Computer
+  Vision and Pattern Recognition} {Proceedings of the ieee/cvf conference on
+  computer vision and pattern recognition}\ (\BPGS\ 10925--10934).
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Bochkovskiy%
+, Wang%
+\BCBL {}\ \BBA {} Liao%
+}{%
+Bochkovskiy%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2020}}%
+}]{%
+Bochkovskiy2020YOLOv4}
+\APACinsertmetastar {%
+Bochkovskiy2020YOLOv4}%
+\begin{APACrefauthors}%
+Bochkovskiy, A.%
+, Wang, C\BHBI Y.%
+\BCBL {}\ \BBA {} Liao, H\BHBI Y\BPBI M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2020}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {YOLOv4: Optimal Speed and Accuracy of Object Detection}
+  {Yolov4: Optimal speed and accuracy of object detection}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{arXiv preprint arXiv:2004.10934}{}{}{}.
+\newblock
+\begin{APACrefURL} \url{https://arxiv.org/abs/2004.10934} \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Bonnaerens%
+\ \protect \BOthers {.}}{%
+Bonnaerens%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2022}}%
+}]{%
+Bonnaerens2022AnchorPruning}
+\APACinsertmetastar {%
+Bonnaerens2022AnchorPruning}%
+\begin{APACrefauthors}%
+Bonnaerens, M.%
+\BCBT {}\ \BOthersPeriod {.}
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2022}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Anchor Pruning for Object Detection} {Anchor pruning for
+  object detection}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Computer Vision and Image
+  Understanding}{223}{}{103523}.
+\newblock
+\begin{APACrefURL}
+  \url{https://www.sciencedirect.com/science/article/pii/S1077314222000601}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Carion%
+\ \protect \BOthers {.}}{%
+Carion%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2020}}%
+}]{%
+Carion2020DETR}
+\APACinsertmetastar {%
+Carion2020DETR}%
+\begin{APACrefauthors}%
+Carion, N.%
+, Massa, F.%
+, Synnaeve, G.%
+, Usunier, N.%
+, Kirillov, A.%
+\BCBL {}\ \BBA {} Zagoruyko, S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2020}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {End-to-End Object Detection with Transformers}
+  {End-to-end object detection with transformers}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {European Conference on Computer Vision (ECCV)} {European
+  conference on computer vision (eccv)}\ (\BPGS\ 213--229).
+\newblock
+\begin{APACrefURL} \url{https://arxiv.org/abs/2005.12872} \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Chen%
+\ \protect \BOthers {.}}{%
+Chen%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2024}}%
+}]{%
+Chen2024}
+\APACinsertmetastar {%
+Chen2024}%
+\begin{APACrefauthors}%
+Chen, H.%
+, Chen, H.%
+, Huang, X.%
+, Zhang, S.%
+, Chen, S.%
+, Cen, F.%
+\BDBL {}Gao, Z.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2024}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Estimation of Sorghum Seedling Number from Drone Image
+  Based on Support Vector Machine and YOLO Algorithms} {Estimation of sorghum
+  seedling number from drone image based on support vector machine and yolo
+  algorithms}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Frontiers in Plant Science}{15}{}{1399872}.
+\newblock
+\begin{APACrefURL} \url{https://doi.org/10.3389/fpls.2024.1399872}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.3389/fpls.2024.1399872} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Ding%
+, Feng%
+, Chen%
+, Guo%
+\BCBL {}\ \BBA {} Liu%
+}{%
+Ding%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2024}}%
+{\protect \APACexlab {{\protect \BCnt {1}}}}}]{%
+Ding2024_RegPTQ}
+\APACinsertmetastar {%
+Ding2024_RegPTQ}%
+\begin{APACrefauthors}%
+Ding, Y.%
+, Feng, W.%
+, Chen, C.%
+, Guo, J.%
+\BCBL {}\ \BBA {} Liu, X.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2024{\protect \BCnt {1}}}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Reg-PTQ: Regression-specialized Post-training
+  Quantization for Fully Quantized Object Detector} {Reg-ptq:
+  Regression-specialized post-training quantization for fully quantized object
+  detector}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {Proceedings of the IEEE/CVF Conference on Computer
+  Vision and Pattern Recognition (CVPR)} {Proceedings of the ieee/cvf
+  conference on computer vision and pattern recognition (cvpr)}\ (\BPGS\
+  16174--16184).
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Ding%
+, Feng%
+, Chen%
+, Guo%
+\BCBL {}\ \BBA {} Liu%
+}{%
+Ding%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2024}}%
+{\protect \APACexlab {{\protect \BCnt {2}}}}}]{%
+ding2024regptq}
+\APACinsertmetastar {%
+ding2024regptq}%
+\begin{APACrefauthors}%
+Ding, Y.%
+, Feng, W.%
+, Chen, C.%
+, Guo, J.%
+\BCBL {}\ \BBA {} Liu, X.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2024{\protect \BCnt {2}}}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Reg-PTQ: Regression-specialized Post-training
+  Quantization for Fully Quantized Object Detector} {Reg-ptq:
+  Regression-specialized post-training quantization for fully quantized object
+  detector}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {Proceedings of the IEEE/CVF Conference on Computer
+  Vision and Pattern Recognition} {Proceedings of the ieee/cvf conference on
+  computer vision and pattern recognition}\ (\BPGS\ 16174--16184).
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Endrawati%
+\ \protect \BOthers {.}}{%
+Endrawati%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2021}}%
+}]{%
+Endrawati2021}
+\APACinsertmetastar {%
+Endrawati2021}%
+\begin{APACrefauthors}%
+Endrawati, N.%
+\BCBT {}\ \BOthersPeriod {.}
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2021}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Tiny's Weight Size Reduction Using Pruning and
+  Quantization} {Tiny's weight size reduction using pruning and
+  quantization}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {2021 International Conference on Artificial Intelligence
+  and Computer Science (ICAICS)} {2021 international conference on artificial
+  intelligence and computer science (icaics)}\ (\BPGS\ 1--6).
+\newblock
+\begin{APACrefURL} \url{https://ieeexplore.ieee.org/document/9768258}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1109/ICAICS53208.2021.9768258} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Freeman%
+, Schneider%
+, Kim%
+, Lee%
+\BCBL {}\ \BBA {} Kantor%
+}{%
+Freeman%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2023}}%
+}]{%
+Freeman2023}
+\APACinsertmetastar {%
+Freeman2023}%
+\begin{APACrefauthors}%
+Freeman, H.%
+, Schneider, E.%
+, Kim, C\BPBI H.%
+, Lee, M.%
+\BCBL {}\ \BBA {} Kantor, G.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2023}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {3D Reconstruction-Based Seed Counting of Sorghum
+  Panicles for Agricultural Inspection} {3d reconstruction-based seed counting
+  of sorghum panicles for agricultural inspection}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {2023 IEEE International Conference on Robotics and
+  Automation (ICRA)} {2023 ieee international conference on robotics and
+  automation (icra)}\ (\BPGS\ 1--7).
+\newblock
+\begin{APACrefURL} \url{https://arxiv.org/abs/2211.07748} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1109/ICRA48891.2023.10160791} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Hamesse%
+\ \protect \BOthers {.}}{%
+Hamesse%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2023}}%
+}]{%
+Hamesse2023}
+\APACinsertmetastar {%
+Hamesse2023}%
+\begin{APACrefauthors}%
+Hamesse, S.%
+\BCBT {}\ \BOthersPeriod {.}
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2023}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Ovitrap Monitor: Online Application for Counting
+  Mosquito Eggs} {Ovitrap monitor: Online application for counting mosquito
+  eggs}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Ecological Informatics}{75}{}{102182}.
+\newblock
+\begin{APACrefURL}
+  \url{https://www.sciencedirect.com/science/article/pii/S1574954123001346}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.ecoinf.2023.102182} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+He%
+\ \protect \BOthers {.}}{%
+He%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2025}}%
+}]{%
+He2025}
+\APACinsertmetastar {%
+He2025}%
+\begin{APACrefauthors}%
+He, T.%
+\BCBT {}\ \BOthersPeriod {.}
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2025}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {A Survey of Lightweight Methods for Object Detection
+  Networks} {A survey of lightweight methods for object detection
+  networks}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Machine Learning with Applications}{18}{}{100672}.
+\newblock
+\begin{APACrefURL}
+  \url{https://www.sciencedirect.com/science/article/pii/S2590005625002164}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.mlwa.2024.100672} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Jacob%
+\ \protect \BOthers {.}}{%
+Jacob%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2018}}%
+}]{%
+Jacob2018}
+\APACinsertmetastar {%
+Jacob2018}%
+\begin{APACrefauthors}%
+Jacob, B.%
+, Kligys, S.%
+, Chen, B.%
+, Meng, M.%
+, Tang, M.%
+, Howard, A.%
+\BDBL {}Kalenichenko, D.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2018}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Quantization and Training of Neural Networks for
+  Efficient Integer-Arithmetic-Only Inference} {Quantization and training of
+  neural networks for efficient integer-arithmetic-only inference}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {Proceedings of the IEEE Conference on Computer Vision
+  and Pattern Recognition (CVPR)} {Proceedings of the ieee conference on
+  computer vision and pattern recognition (cvpr)}\ (\BPGS\ 2704--2713).
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Javed%
+, L{\'o}pez-Denman%
+\BCBL {}\ \protect \BOthers {.}}{%
+Javed%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2023}}%
+}]{%
+Javed2023}
+\APACinsertmetastar {%
+Javed2023}%
+\begin{APACrefauthors}%
+Javed, N.%
+, L{\'o}pez-Denman, A.%
+\BCBL {}\ \BOthersPeriod {.}\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2023}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {EggCountAI: A Convolutional Neural Network-Based
+  Software for Counting of Aedes aegypti Mosquito Eggs} {Eggcountai: A
+  convolutional neural network-based software for counting of aedes aegypti
+  mosquito eggs}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Parasites \& Vectors}{16}{1}{355}.
+\newblock
+\begin{APACrefURL}
+  \url{https://parasitesandvectors.biomedcentral.com/articles/10.1186/s13071-023-05956-1}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1186/s13071-023-05956-1} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Jocher%
+, Qiu%
+\BCBL {}\ \BBA {} Chaurasia%
+}{%
+Jocher%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2023}}%
+}]{%
+yolov8}
+\APACinsertmetastar {%
+yolov8}%
+\begin{APACrefauthors}%
+Jocher, G.%
+, Qiu, J.%
+\BCBL {}\ \BBA {} Chaurasia, A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2023}{{\APACmonth{01}}}{}.
+\newblock
+\APACrefbtitle {{Ultralytics YOLO}.} {{Ultralytics YOLO}.}
+\newblock
+\begin{APACrefURL} \url{https://github.com/ultralytics/ultralytics}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Krishnamoorthi%
+}{%
+Krishnamoorthi%
+}{%
+{\protect \APACyear {2018}}%
+}]{%
+Krishnamoorthi2018}
+\APACinsertmetastar {%
+Krishnamoorthi2018}%
+\begin{APACrefauthors}%
+Krishnamoorthi, R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2018}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Quantizing deep convolutional networks for efficient
+  inference: A whitepaper} {Quantizing deep convolutional networks for
+  efficient inference: A whitepaper}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{arXiv preprint arXiv:1806.08342}{}{}{}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Li%
+, Kadav%
+, Durdanovic%
+, Samet%
+\BCBL {}\ \BBA {} Graf%
+}{%
+Li%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2017}}%
+}]{%
+Li2017FilterPruning}
+\APACinsertmetastar {%
+Li2017FilterPruning}%
+\begin{APACrefauthors}%
+Li, H.%
+, Kadav, A.%
+, Durdanovic, I.%
+, Samet, H.%
+\BCBL {}\ \BBA {} Graf, H\BPBI P.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Pruning Filters for Efficient ConvNets} {Pruning filters
+  for efficient convnets}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {International Conference on Learning Representations
+  (ICLR).} {International conference on learning representations (iclr).}
+\newblock
+\begin{APACrefURL} \url{https://arxiv.org/abs/1608.08710} \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Luo%
+, Wu%
+\BCBL {}\ \BBA {} Lin%
+}{%
+Luo%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2017}}%
+}]{%
+Luo2017ThiNet}
+\APACinsertmetastar {%
+Luo2017ThiNet}%
+\begin{APACrefauthors}%
+Luo, J\BHBI H.%
+, Wu, J.%
+\BCBL {}\ \BBA {} Lin, W.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {ThiNet: A Filter Level Pruning Method for Deep Neural
+  Network Compression} {Thinet: A filter level pruning method for deep neural
+  network compression}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {International Conference on Computer Vision (ICCV)}
+  {International conference on computer vision (iccv)}\ (\BPGS\ 5058--5066).
+\newblock
+\begin{APACrefURL} \url{https://arxiv.org/abs/1707.06342} \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Nagel%
+\ \protect \BOthers {.}}{%
+Nagel%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2021}}%
+}]{%
+Nagel2021}
+\APACinsertmetastar {%
+Nagel2021}%
+\begin{APACrefauthors}%
+Nagel, M.%
+, Fournarakis, M.%
+, Amjad, R\BPBI A.%
+, Bondarenko, Y.%
+, Baalen, M\BPBI v.%
+\BCBL {}\ \BBA {} Blankevoort, T.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2021}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {A White Paper on Neural Network Quantization for
+  Efficient Inference} {A white paper on neural network quantization for
+  efficient inference}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{arXiv preprint arXiv:2103.13630}{}{}{}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Naranjo-Alcazar%
+, Grau-Haro%
+, Zuccarello%
+, Almenar%
+\BCBL {}\ \BBA {} Lopez-Ballester%
+}{%
+Naranjo-Alcazar%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2024}}%
+}]{%
+NaranjoAlcazar2024}
+\APACinsertmetastar {%
+NaranjoAlcazar2024}%
+\begin{APACrefauthors}%
+Naranjo-Alcazar, J.%
+, Grau-Haro, J.%
+, Zuccarello, P.%
+, Almenar, D.%
+\BCBL {}\ \BBA {} Lopez-Ballester, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2024}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Automatic Counting and Classification of Mosquito Eggs
+  in Field Traps} {Automatic counting and classification of mosquito eggs in
+  field traps}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{arXiv}{}{}{}.
+\newblock
+\begin{APACrefURL} \url{https://arxiv.org/abs/2405.20656} \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Sali%
+\ \protect \BOthers {.}}{%
+Sali%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2019}}%
+}]{%
+Sali2019}
+\APACinsertmetastar {%
+Sali2019}%
+\begin{APACrefauthors}%
+Sali, J\BPBI W.%
+\BCBT {}\ \BOthersPeriod {.}
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2019}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Automated Detection of Celiac Disease on Duodenal Biopsy
+  Histopathology Images Using Deep Learning} {Automated detection of celiac
+  disease on duodenal biopsy histopathology images using deep learning}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Clinical Gastroenterology and
+  Hepatology}{17}{13}{2754--2762}.
+\newblock
+\begin{APACrefURL} \url{https://pubmed.ncbi.nlm.nih.gov/30984467/}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.cgh.2019.03.034} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Santiago%
+\ \protect \BOthers {.}}{%
+Santiago%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2024}}%
+}]{%
+Santiago2024}
+\APACinsertmetastar {%
+Santiago2024}%
+\begin{APACrefauthors}%
+Santiago, G\BPBI N.%
+, Magalhaes, P\BPBI H\BPBI C.%
+, Carcedo, A\BPBI J\BPBI P.%
+, Marziotte, L.%
+, Mayor, L.%
+\BCBL {}\ \BBA {} Ciampitti, I\BPBI A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2024}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Deep Learning Methods Using Imagery from a Smartphone
+  for Recognizing Sorghum Panicles and Counting Grains at a Plant Level} {Deep
+  learning methods using imagery from a smartphone for recognizing sorghum
+  panicles and counting grains at a plant level}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Plant Phenomics}{6}{}{0234}.
+\newblock
+\begin{APACrefURL} \url{https://doi.org/10.34133/plantphenomics.0234}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.34133/plantphenomics.0234} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Shu%
+, Liu%
+, Gao%
+, Yan%
+\BCBL {}\ \BBA {} Shen%
+}{%
+Shu%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2021}}%
+}]{%
+shu2021channel}
+\APACinsertmetastar {%
+shu2021channel}%
+\begin{APACrefauthors}%
+Shu, C.%
+, Liu, Y.%
+, Gao, J.%
+, Yan, Z.%
+\BCBL {}\ \BBA {} Shen, C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2021}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Channel-wise knowledge distillation for dense
+  prediction} {Channel-wise knowledge distillation for dense
+  prediction}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {Proceedings of the IEEE/CVF International Conference on
+  Computer Vision} {Proceedings of the ieee/cvf international conference on
+  computer vision}\ (\BPGS\ 5311--5320).
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Stoleru%
+\ \protect \BOthers {.}}{%
+Stoleru%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2022}}%
+}]{%
+Stoleru2022}
+\APACinsertmetastar {%
+Stoleru2022}%
+\begin{APACrefauthors}%
+Stoleru, B.%
+\BCBT {}\ \BOthersPeriod {.}
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2022}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Automated Detection of Celiac Disease Using Machine
+  Learning} {Automated detection of celiac disease using machine
+  learning}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Scientific Reports}{12}{1}{4012}.
+\newblock
+\begin{APACrefURL} \url{https://www.nature.com/articles/s41598-022-07199-z}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1038/s41598-022-07199-z} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Tyagi%
+\ \protect \BOthers {.}}{%
+Tyagi%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2023}}%
+}]{%
+Tyagi2023}
+\APACinsertmetastar {%
+Tyagi2023}%
+\begin{APACrefauthors}%
+Tyagi, A\BPBI K.%
+, Mohapatra, C.%
+, Makharia, G.%
+, Bansal, A.%
+, Gupta, S.%
+, Ramakrishnan, G.%
+\BCBL {}\ \BBA {} Raman, S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2023}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {DeGPR: Deep Guided Posterior Regularization for
+  Multi-Class Cell Detection and Counting} {Degpr: Deep guided posterior
+  regularization for multi-class cell detection and counting}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {Proceedings of the IEEE/CVF Conference on Computer
+  Vision and Pattern Recognition (CVPR)} {Proceedings of the ieee/cvf
+  conference on computer vision and pattern recognition (cvpr)}\ (\BPGS\
+  23913--23923).
+\newblock
+\begin{APACrefURL}
+  \url{https://openaccess.thecvf.com/content/CVPR2023/papers/Tyagi_DeGPR_Deep_Guided_Posterior_Regularization_for_Multi-Class_Cell_Detection_and_CVPR_2023_paper.pdf}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Vicente%
+\ \protect \BOthers {.}}{%
+Vicente%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2024}}%
+}]{%
+vicente2024aedesaegyptieggcounting}
+\APACinsertmetastar {%
+vicente2024aedesaegyptieggcounting}%
+\begin{APACrefauthors}%
+Vicente, M\BPBI N\BPBI d\BPBI O.%
+, Higa, G\BPBI T\BPBI H.%
+, Porto, J\BPBI V\BPBI d\BPBI A.%
+, Henrique, H.%
+, Nucci, P.%
+, Santana, A\BPBI B.%
+\BDBL {}Pistori, H.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2024}{}{}.
+\newblock
+\APACrefbtitle {Aedes aegypti Egg Counting with Neural Networks for Object
+  Detection.} {Aedes aegypti egg counting with neural networks for object
+  detection.}
+\newblock
+\begin{APACrefURL} \url{https://arxiv.org/abs/2403.08016} \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Wang%
+, Zhou%
+, Shi%
+, Guo%
+\BCBL {}\ \BBA {} Liu%
+}{%
+Wang%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2024}}%
+}]{%
+smallObject1}
+\APACinsertmetastar {%
+smallObject1}%
+\begin{APACrefauthors}%
+Wang, L.%
+, Zhou, Z.%
+, Shi, G.%
+, Guo, J.%
+\BCBL {}\ \BBA {} Liu, Z.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2024}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Small Object Detection Based on Bidirectional Feature
+  Fusion and Multi-scale Distillation} {Small object detection based on
+  bidirectional feature fusion and multi-scale distillation}.{\BBCQ}
+\newblock
+\BIn{} M.~Wand, K.~Malinovsk{\'a}, J.~Schmidhuber\BCBL {}\ \BBA {} I\BPBI
+  V.~Tetko\ (\BEDS), \APACrefbtitle {Artificial Neural Networks and Machine
+  Learning -- ICANN 2024} {Artificial neural networks and machine learning --
+  icann 2024}\ (\BPGS\ 200--214).
+\newblock
+\APACaddressPublisher{Cham}{Springer Nature Switzerland}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Wei%
+, Gong%
+, Liu%
+, Lu%
+\BCBL {}\ \BBA {} Zhou%
+}{%
+Wei%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2018}}%
+}]{%
+Wei2018}
+\APACinsertmetastar {%
+Wei2018}%
+\begin{APACrefauthors}%
+Wei, Y.%
+, Gong, C.%
+, Liu, Y.%
+, Lu, J.%
+\BCBL {}\ \BBA {} Zhou, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2018}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Quantization Mimic: Towards Very Tiny CNN for Object
+  Detection} {Quantization mimic: Towards very tiny cnn for object
+  detection}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {Proceedings of the European Conference on Computer
+  Vision (ECCV)} {Proceedings of the european conference on computer vision
+  (eccv)}\ (\BPGS\ 267--283).
+\newblock
+\begin{APACrefURL}
+  \url{https://openaccess.thecvf.com/content_ECCV_2018/html/Yi_Wei_Quantization_Mimic_Towards_ECCV_2018_paper.html}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Xiao%
+\ \protect \BOthers {.}}{%
+Xiao%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2023}}%
+}]{%
+xiao2023smoothquant}
+\APACinsertmetastar {%
+xiao2023smoothquant}%
+\begin{APACrefauthors}%
+Xiao, G.%
+, Lin, J.%
+, Seznec, M.%
+, Wu, H.%
+, Demouth, J.%
+\BCBL {}\ \BBA {} Han, S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2023}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {SmoothQuant: Accurate and Efficient Post-Training
+  Quantization for Large Language Models} {Smoothquant: Accurate and efficient
+  post-training quantization for large language models}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {International Conference on Machine Learning.}
+  {International conference on machine learning.}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Xu%
+\ \protect \BOthers {.}}{%
+Xu%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2023}}%
+{\protect \APACexlab {{\protect \BCnt {1}}}}}]{%
+Xu2023_QDETR}
+\APACinsertmetastar {%
+Xu2023_QDETR}%
+\begin{APACrefauthors}%
+Xu, S.%
+, Li, Y.%
+, Lin, M.%
+, Gao, P.%
+, Guo, G.%
+, L{\"u}, J.%
+\BCBL {}\ \BBA {} Zhang, B.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2023{\protect \BCnt {1}}}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Q-DETR: An Efficient Low-Bit Quantized Detection
+  Transformer} {Q-detr: An efficient low-bit quantized detection
+  transformer}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {Proceedings of the IEEE/CVF Conference on Computer
+  Vision and Pattern Recognition (CVPR).} {Proceedings of the ieee/cvf
+  conference on computer vision and pattern recognition (cvpr).}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Xu%
+\ \protect \BOthers {.}}{%
+Xu%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2023}}%
+{\protect \APACexlab {{\protect \BCnt {2}}}}}]{%
+xu2023qdetr}
+\APACinsertmetastar {%
+xu2023qdetr}%
+\begin{APACrefauthors}%
+Xu, S.%
+, Li, Y.%
+, Lin, M.%
+, Gao, P.%
+, Guo, G.%
+, L{\"u}, J.%
+\BCBL {}\ \BBA {} Zhang, B.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2023{\protect \BCnt {2}}}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Q-DETR: An Efficient Low-Bit Quantized Detection
+  Transformer} {Q-detr: An efficient low-bit quantized detection
+  transformer}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {Proceedings of the IEEE/CVF Conference on Computer
+  Vision and Pattern Recognition} {Proceedings of the ieee/cvf conference on
+  computer vision and pattern recognition}\ (\BPGS\ 3842--3851).
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Yang%
+\ \protect \BOthers {.}}{%
+Yang%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2022}}%
+}]{%
+yang2022focal}
+\APACinsertmetastar {%
+yang2022focal}%
+\begin{APACrefauthors}%
+Yang, Z.%
+, Li, Z.%
+, Jiang, X.%
+, Gong, Y.%
+, Yuan, Z.%
+, Zhao, D.%
+\BCBL {}\ \BBA {} Yuan, C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2022}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Focal and global knowledge distillation for detectors}
+  {Focal and global knowledge distillation for detectors}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {Proceedings of the IEEE/CVF Conference on Computer
+  Vision and Pattern Recognition} {Proceedings of the ieee/cvf conference on
+  computer vision and pattern recognition}\ (\BPGS\ 4633--4642).
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Yu%
+\ \protect \BOthers {.}}{%
+Yu%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2025}}%
+}]{%
+Yu2025_PKD}
+\APACinsertmetastar {%
+Yu2025_PKD}%
+\begin{APACrefauthors}%
+Yu, H.%
+, Luo, Q.%
+, Peng, W.%
+, Zheng, L.%
+, Ju, J.%
+\BCBL {}\ \BBA {} Zhuo, H.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2025}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {PKD-YOLOv8: A Collaborative Pruning and Knowledge
+  Distillation Framework for Lightweight Rapeseed Pest Detection} {Pkd-yolov8:
+  A collaborative pruning and knowledge distillation framework for lightweight
+  rapeseed pest detection}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Sensors}{25}{16}{5004}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+B.~Zhao%
+, Luo%
+, Lin%
+\BCBL {}\ \BBA {} Han%
+}{%
+B.~Zhao%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2026}}%
+}]{%
+Zhao2026_FKDNuSeg}
+\APACinsertmetastar {%
+Zhao2026_FKDNuSeg}%
+\begin{APACrefauthors}%
+Zhao, B.%
+, Luo, J.%
+, Lin, J.%
+\BCBL {}\ \BBA {} Han, C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2026}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {FKDNuSeg: Flawless knowledge distillation for
+  lightweight and fast nuclei instance segmentation and classification}
+  {Fkdnuseg: Flawless knowledge distillation for lightweight and fast nuclei
+  instance segmentation and classification}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Medical Image Analysis}{112}{}{104089}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Y.~Zhao%
+\ \protect \BOthers {.}}{%
+Y.~Zhao%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2023}}%
+}]{%
+Zhao2023RTDETR}
+\APACinsertmetastar {%
+Zhao2023RTDETR}%
+\begin{APACrefauthors}%
+Zhao, Y.%
+, Lv, W.%
+, Xu, S.%
+, Wei, J.%
+, Wang, G.%
+, Dang, Q.%
+\BDBL {}Chen, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2023}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {DETRs Beat YOLOs on Real-time Object Detection} {Detrs
+  beat yolos on real-time object detection}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{arXiv preprint arXiv:2304.08069}{}{}{}.
+\newblock
+\begin{APACrefURL} \url{https://arxiv.org/abs/2304.08069} \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Zhou%
+\ \protect \BOthers {.}}{%
+Zhou%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2023}}%
+}]{%
+smallObject2}
+\APACinsertmetastar {%
+smallObject2}%
+\begin{APACrefauthors}%
+Zhou, M.%
+, Yi, C.%
+, Li, M.%
+, Wan, H.%
+, Li, G.%
+\BCBL {}\ \BBA {} Han, D.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2023}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Transforming Limitations into Advantages: Improving
+  Small Object Detection Accuracy with SC-AttentionIoU Loss Function}
+  {Transforming limitations into advantages: Improving small object detection
+  accuracy with sc-attentioniou loss function}.{\BBCQ}
+\newblock
+\BIn{} L.~Iliadis, A.~Papaleonidas, P.~Angelov\BCBL {}\ \BBA {} C.~Jayne\
+  (\BEDS), \APACrefbtitle {Artificial Neural Networks and Machine Learning --
+  ICANN 2023} {Artificial neural networks and machine learning -- icann 2023}\
+  (\BPGS\ 221--232).
+\newblock
+\APACaddressPublisher{Cham}{Springer Nature Switzerland}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Zhu%
+\ \protect \BOthers {.}}{%
+Zhu%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2023}}%
+{\protect \APACexlab {{\protect \BCnt {1}}}}}]{%
+Zhu2023_ScaleKD}
+\APACinsertmetastar {%
+Zhu2023_ScaleKD}%
+\begin{APACrefauthors}%
+Zhu, Y.%
+, Zhou, Q.%
+, Liu, N.%
+, Xu, Z.%
+, Ou, Z.%
+, Mou, X.%
+\BCBL {}\ \BBA {} Tang, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2023{\protect \BCnt {1}}}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {ScaleKD: Distilling Scale-Aware Knowledge in Small
+  Object Detector} {Scalekd: Distilling scale-aware knowledge in small object
+  detector}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {Proceedings of the IEEE/CVF Conference on Computer
+  Vision and Pattern Recognition (CVPR)} {Proceedings of the ieee/cvf
+  conference on computer vision and pattern recognition (cvpr)}\ (\BPGS\
+  19723--19733).
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Zhu%
+\ \protect \BOthers {.}}{%
+Zhu%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2023}}%
+{\protect \APACexlab {{\protect \BCnt {2}}}}}]{%
+zhu2023scalekd}
+\APACinsertmetastar {%
+zhu2023scalekd}%
+\begin{APACrefauthors}%
+Zhu, Y.%
+, Zhou, Q.%
+, Liu, N.%
+, Xu, Z.%
+, Ou, Z.%
+, Mou, X.%
+\BCBL {}\ \BBA {} Tang, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2023{\protect \BCnt {2}}}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {ScaleKD: Distilling scale-aware knowledge in small
+  object detector} {Scalekd: Distilling scale-aware knowledge in small object
+  detector}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {Proceedings of the IEEE/CVF Conference on Computer
+  Vision and Pattern Recognition} {Proceedings of the ieee/cvf conference on
+  computer vision and pattern recognition}\ (\BPGS\ 19723--19733).
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}

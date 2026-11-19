@@ -4,71 +4,36 @@
 %
 %   Description : This file will contain your review of related works.
 %                 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \chapter{Related Works}
 \label{sec:relatedworks}
 
-Dense small-object detection \cite{smallObject1,smallObject2} has been extensively studied across entomology, agriculture, and digital pathology, where automated quantification replaces labor-intensive manual inspection. In mosquito surveillance, EggCountAI \cite{Javed2023} employs Mask R-CNN to achieve high egg-counting accuracy under controlled imaging conditions. While highly accurate, it relies on a parameter-heavy architecture that limits its direct deployment in real-time, low-power field scenarios. Subsequent studies have extended automated detection to field-collected ovitrap images using CNN-based object detection frameworks \cite{Hamesse2023,NaranjoAlcazar2024,vicente2024aedesaegyptieggcounting}. These methodologies enable the rapid quantification of \textit{Aedes} mosquito eggs from environmental samples, which is a paramount requirement for predicting and mitigating the outbreak of mosquito-borne diseases.
+Dense small‑object detection \cite{smallObject1,smallObject2} has been studied across entomology, agriculture, and digital pathology, where automation replaces labor‑intensive manual quantification. In mosquito surveillance, EggCountAI \cite{Javed2023} uses Mask RCNN to achieve high egg‑counting accuracy under controlled imaging. Although accurate, the model’s large parameter count limits real‑time, low‑power deployment. Subsequent work extended detection to field‑collected ovitrap images with CNN‑based frameworks \cite{Hamesse2023,NaranjoAlcazar2024,vicente2024aedesaegyptieggcounting}. These approaches enable rapid quantification of \textit{Aedes} eggs, a crucial step for predicting and mitigating mosquito‑borne disease outbreaks.
 
-In agricultural phenotyping, YOLO-based pipelines have been widely adopted for seedling and grain counting from drone \cite{Chen2024} and smartphone imagery \cite{Santiago2024}. By automating the estimation of dense agricultural targets, these frameworks accelerate yield forecasting and breeding programs that were previously hindered by manual counting bottlenecks. Furthermore, large-scale benchmarks such as the Sorghum-Grain-Count (SGC) dataset \cite{Bakshi2025} provide rigorous testing grounds containing thousands of densely packed grains per panicle, explicitly demanding high-capacity detection networks capable of navigating severe occlusions and overlaps. To further improve structural accuracy in these complex, overlapping panicles, reconstruction-based approaches \cite{Freeman2023} have been introduced to leverage 3D spatial information.
+In agricultural phenotyping, YOLO‑based pipelines are common for seedling and grain counting from drone \cite{Chen2024} and smartphone imagery \cite{Santiago2024}. Automating dense agricultural target estimation accelerates yield forecasting and breeding, which were previously bottlenecked by manual counting. Large‑scale benchmarks such as the Sorghum‑Grain‑Count (SGC) dataset \cite{Bakshi2025} provide thousands of densely packed grains per panicle, demanding high‑capacity detectors that can handle severe occlusions. Reconstruction‑based methods \cite{Freeman2023} further improve accuracy by exploiting 3D spatial information.
 
-In computational pathology, automated detection of histologic structures supports celiac disease diagnosis by identifying subtle cellular abnormalities in biopsy tissues \cite{Stoleru2022,Sali2019}. Detection-based counting frameworks such as DeGPR \cite{Tyagi2023} advance this domain by achieving expert-level performance in crowded microscopic tissue patches through deep guided posterior regularization. Despite differences in imaging modality and visual variability, these domains share a common technical challenge: densely packed small objects occupy limited pixel area, suffer from occlusion and overlap, and place significant strain on detector localization capacity.
+Computational pathology benefits from automated detection of histologic structures to support celiac disease diagnosis \cite{Stoleru2022,Sali2019}. Frameworks like DeGPR \cite{Tyagi2023} achieve expert‑level performance on crowded microscopic patches using deep guided posterior regularisation. Despite diverse imaging modalities, all domains share the challenge of densely packed small objects that strain detector localisation.
 
-Modern object detectors address small-object sensitivity through multi-scale feature aggregation and architectural optimization. YOLO-based models, including YOLOv4 \cite{Bochkovskiy2020YOLOv4} and YOLOv8n \cite{yolov8}, employ backbone, neck, and head decompositions with feature pyramid designs that enhance small-object localization while maintaining real-time performance. Transformer-based detectors such as DETR \cite{Carion2020DETR} reformulate detection as a set prediction problem using global attention mechanisms and eliminate hand-crafted post-processing such as non-maximum suppression. Real-time variants such as RT-DETR \cite{Zhao2023RTDETR} demonstrate that transformer-based approaches can match or surpass YOLO models in real-time detection scenarios, offering alternative trade-offs between backbone feature extraction, global reasoning through attention, and prediction heads. These architectural differences motivate module-specific analysis when optimizing detection efficiency.
+Modern detectors address small‑object sensitivity through multi‑scale feature aggregation and architectural optimisation. YOLO families (YOLOv4 \cite{Bochkovskiy2020YOLOv4}, YOLOv8n \cite{yolov8}) separate backbone, neck, and head, using feature pyramids to improve localisation while retaining real‑time speed. Transformer‑based detectors such as DETR \cite{Carion2020DETR} treat detection as set prediction, removing anchors and non‑maximum suppression. Real‑time variants like RT‑DETR \cite{Zhao2023RTDETR} match or exceed YOLO performance, offering alternative trade‑offs between backbone extraction, global attention, and prediction heads. These differences motivate module‑specific analysis for efficiency.
 
 \begin{sloppypar}
-Although architectural innovation has improved detection accuracy and inference speed, most domain-specific counting systems prioritize predictive performance over parameter efficiency. Heavyweight YOLO variants, Mask R-CNN backbones, and transformer-based detectors are typically deployed on GPU workstations, limiting applicability in field-based or edge settings. Model compression strategies \cite{He2025,Wei2018}, including pruning, quantization, and lightweight architectural redesign, aim to reduce parameter count and computational cost. Structured filter pruning methods \cite{Li2017FilterPruning,Luo2017ThiNet}, which remove entire convolutional channels based on importance criteria, have been shown to produce hardware-friendly reductions while preserving performance after fine-tuning. In detection-specific contexts, pruning \cite{Endrawati2021} has been applied to reduce YOLO model size and computational load, and anchor-level pruning strategies \cite{Bonnaerens2022AnchorPruning} have been proposed to improve efficiency in object detection pipelines. However, structured pruning alone often severely degrades multi-scale feature aggregation modules, such as YOLO necks and transformer encoders, which are vital for small-object localization.
+Although architectural advances have boosted accuracy and speed, most domain‑specific counting systems prioritise performance over parameter efficiency. Heavyweight YOLO variants, Mask RCNN backbones, and transformer‑based detectors typically run on GPU workstations, limiting field or edge use. Model‑compression strategies \cite{He2025,Wei2018}—including pruning, quantisation, and lightweight redesign—aim to reduce parameter count and computational cost. Structured filter pruning \cite{Li2017FilterPruning,Luo2017ThiNet} removes entire convolutional channels based on importance criteria, yielding hardware‑friendly reductions while preserving fine‑tuned performance. In detection, pruning \cite{Endrawati2021} reduces YOLO size, and anchor‑level pruning \cite{Bonnaerens2022AnchorPruning} improves pipeline efficiency. However, pruning alone often degrades multi‑scale feature aggregation modules, such as YOLO necks and transformer encoders, which are essential for small‑object localisation.
 \end{sloppypar}
 
-To mitigate the representational degradation induced by structural pruning, Knowledge Distillation (KD) serves as a critical reconstructive mechanism that re-establishes disrupted spatial hierarchies. Beyer et al. \cite{beyer2022knowledge} demonstrated that distillation functions optimally when treated as a rigorous function matching problem; by applying consistent, aggressively augmented input views and utilizing extended, patient training schedules, a student network can fully recover its capacity without premature overfitting. For dense small-object detection, where background pixels overwhelmingly dominate the loss landscape, Focal and Global Distillation (FGD) \cite{yang2022focal} explicitly decouples feature maps to force the student network to prioritize localized foreground object boundaries while simultaneously transferring global scene context. Furthermore, because structured pruning inherently reduces the student's channel dimensions, Channel-Wise Distillation (CWD) \cite{shu2021channel} aligns the spatial distributions of the teacher and student in the channel domain, intrinsically amplifying foreground object saliency despite the network's sparsity. To address the specific scale-variance challenges of tiny objects, techniques like ScaleKD \cite{zhu2023scalekd} perform cross-scale feature distillation, transferring high-resolution spatial information from a teacher's shallow layers directly into the deeper layers of a lightweight student, effectively bridging the architectural mismatch caused by pruning. Collaborative frameworks combining these approaches have already shown promise in lightweight pest detection paradigms \cite{Yu2025_PKD}, as well as in generating compact models for rapid nuclei instance segmentation \cite{Zhao2026_FKDNuSeg}.
+To counteract pruning‑induced degradation, Knowledge Distillation (KD) reinstates disrupted spatial hierarchies. Beyer et al. \cite{beyer2022knowledge} show that distillation works best when framed as rigorous function matching, using aggressive data augmentation and extended training schedules to recover student capacity without overfitting. For dense small‑object detection, Focal and Global Distillation (FGD) \cite{yang2022focal} separates foreground boundaries from background, while Channel‑Wise Distillation (CWD) \cite{shu2021channel} aligns teacher and student channel distributions, enhancing foreground saliency despite sparsity. ScaleKD \cite{zhu2023scalekd} transfers high‑resolution features from shallow teacher layers to deeper student layers, bridging architectural gaps after pruning. Collaborative approaches have improved lightweight pest detection \cite{Yu2025_PKD} and rapid nuclei segmentation \cite{Zhao2026_FKDNuSeg}.
 
-While pruning and KD effectively optimize the network architecture, achieving viable inference speeds on resource-constrained edge hardware needs low-bit network quantization. However, standard Post-Training Quantization (PTQ) frequently induces small signal erasure, where the weak, low-magnitude activation signals defining small targets are crushed into zero-bins during the rounding process, leading to a catastrophic drop in bounding box recall. To circumvent the extensive computational overhead of Quantization-Aware Training (QAT), specialized PTQ algorithms have been developed for detection architectures. For YOLO models, Reg-PTQ \cite{ding2024regptq} introduces a gradient-energy balancing mechanism that neutralizes compounded quantization errors within multi-scale fusion necks, explicitly stabilizing bounding box regression without full QAT. For transformer-based models like RT-DETR, Vision Transformers present unique quantization challenges due to massive, systematic activation outliers. Methodologies such as SmoothQuant \cite{xiao2023smoothquant} address this by mathematically migrating the variance from the activations into the weights, enabling aggressive symmetric INT8 quantization. Building on these principles, Q-DETR \cite{xu2023qdetr} ensures that low-bit conversion preserves the delicate cross-attention mechanisms necessary for global object queries.
+Pruning and KD improve architecture, but efficient edge inference also requires low‑bit quantisation. Standard Post‑Training Quantisation (PTQ) can erase weak activation signals, harming small‑object recall. Specialized PTQ methods mitigate this. Reg‑PTQ \cite{ding2024regptq} balances gradient energy to stabilise bounding‑box regression in YOLO necks without full QAT. For transformer‑based models, SmoothQuant \cite{xiao2023smoothquant} shifts variance from activations to weights, enabling aggressive INT8 quantisation. Q‑DETR \cite{xu2023qdetr} preserves cross‑attention mechanisms during low‑bit conversion.
 
-Despite these advancements, prior compression research primarily evaluates structured pruning, knowledge distillation, and quantization as isolated techniques, or restricts their evaluation to generic detection benchmarks. The interaction and compounding effects of a unified, multi-step compression pipeline, specifically architecture-aware pruning followed by distillation and specialized quantization, on dense small-object counting fidelity remain underexplored. Furthermore, there is a lack of systematic investigation into how this multi-step pipeline impacts distinct architectural modules across heterogeneous domains with extreme instance density. This gap motivates a comprehensive evaluation of a unified compression framework across multiple modules, detection architectures, and high-density datasets to establish practical guidelines for parameter-efficient edge deployment.
+Despite these advances, most compression research evaluates pruning, KD, and quantisation in isolation or on generic benchmarks. A unified, multi‑step pipeline—architecture‑aware pruning followed by distillation and specialised quantisation—remains underexplored for dense small‑object counting. Moreover, systematic studies of how such pipelines affect distinct modules across heterogeneous, high‑density datasets are lacking. Addressing this gap motivates a comprehensive evaluation of a unified compression framework across multiple modules, detection architectures, and extreme‑density datasets to establish practical guidelines for parameter‑efficient edge deployment.
+
 \begin{comment}
-%
 % IPR acknowledgement: the contents within this comment are from Ethel Ong's slides on RRL.
-%
-Guide on Writing your Related Works chapter
- 
-1. Identify the keywords with respect to your research
-      One keyword = One document section
-                Examples: 2.1 Story Generation Systems
-			 2.2 Knowledge Representation
-
-2.  Find references using these keywords
-
-3.  For each of the references that you find,
-        Check: Is it relevant to your research?
-        Use their references to find more relevant works.
-
-4. Identify a set of criteria for comparison.
-       It will serve as a guide to help you focus on what to look for
-
-5. Write a summary focusing on -
-       What: A short description of the work
-       How: A summary of the approach it utilized
-       Findings: If applicable, provide the results
-        Why: Relevance to your work
-
-6. At the end of each section,  show a Table of Comparison of the related works 
-   and your proposed project/system
-
+% Guide on Writing your Related Works chapter
+%   1. Identify the keywords with respect to your research
+%   2. Find references using these keywords
+%   3. For each of the references that you find, check relevance
+%   4. Identify a set of criteria for comparison
+%   5. Write a summary focusing on what, how, findings, why
+%   6. At the end of each section, show a Table of Comparison of the related works and your proposed project/system
 \end{comment}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
