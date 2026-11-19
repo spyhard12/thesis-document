@@ -20,9 +20,32 @@ where $\ast$ denotes the convolution operation. Each filter generates a correspo
 Building upon the feature extraction capabilities of CNNs, object detectors are specialized architectures tasked with simultaneously classifying objects within an image and localizing them through bounding box coordinates. This requires a multi-task learning approach where the model optimizes both a classification loss and a localization regression loss. Object detection architectures typically consist of distinct structural components responsible for feature extraction, multi-scale feature aggregation, and prediction, allowing for targeted architectural modifications.
 
 \subsection{YOLO Architecture}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=\linewidth]{yolov4_architecture.png}
+\caption{YOLOv4 architecture: backbone (CSPDarknet53), neck (SPP + PANet), and YOLOv3‑style head.}
+\label{fig:yolov4_arch}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=\linewidth]{yolo_architecture (1).png}
+\caption{YOLOv8 architecture: CSPDarknet backbone with C2f blocks, SPPF, and decoupled anchor‑free head.}
+\label{fig:yolov8_arch}
+\end{figure}
 The You Only Look Once (YOLO) family of models represents the single-stage approach to object detection, framing the task as a single regression problem to achieve high inference speeds. Structurally, the architecture is divided into three primary components: the backbone, the neck, and the detection head. The backbone is responsible for extracting hierarchical features from the raw input image. The neck aggregates and fuses these features across multiple spatial scales to preserve contextual information for objects of varying sizes. Finally, the detection head performs dense predictions to output the final bounding box coordinates and class probabilities. This explicit modular separation makes each component a distinct candidate for structural pruning based on its inherent redundancy.
 
 \subsection{DETR Architecture}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=\linewidth]{rtdetr_architecture (1).png}
+\caption{RT‑DETR architecture: CNN backbone, hybrid encoder (self‑attention on high‑level features), cross‑scale feature fusion, decoder with query‑based set prediction, and separate class/box heads. No NMS is required at inference.}
+\label{fig:rtdetr_arch}
+\end{figure}
+
+The DEtection TRansformer (DETR) represents a paradigm shift by treating object detection as a direct set prediction problem, removing the need for hand‑crafted components like anchor boxes and non‑maximum suppression. The architecture consists of a convolutional backbone, a transformer encoder‑decoder module, and specialized prediction heads. The backbone extracts low‑resolution feature maps from the input image, which are then flattened and combined with positional encodings. These features are processed by the transformer encoder‑decoder, which leverages self‑attention and cross‑attention mechanisms to model global context and object relationships before mapping them to a fixed set of object queries. Finally, the prediction heads, implemented as multi‑layer perceptrons, transform these queries into class labels and bounding box coordinates.
 The DEtection TRansformer (DETR) represents a paradigm shift by treating object detection as a direct set prediction problem, removing the need for hand-crafted components like anchor boxes and non-maximum suppression. The architecture consists of a convolutional backbone, a transformer encoder-decoder module, and specialized prediction heads. The backbone extracts low-resolution feature maps from the input image, which are then flattened and combined with positional encodings. These features are processed by the transformer encoder-decoder, which leverages self-attention and cross-attention mechanisms to model global context and object relationships before mapping them to a fixed set of object queries. Finally, the prediction heads, implemented as multi-layer perceptrons, transform these queries into class labels and bounding box coordinates.
 
 \section{Structured Pruning via L1-Norm}
