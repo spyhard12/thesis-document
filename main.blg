@@ -12,8 +12,6 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: myreferences.bib
-Warning--entry type for "yolov8" isn't style-file defined
---line 115 of file myreferences.bib
 apacite.bst [2013/07/21 v6.03 APA bibliography style]
 Warning--`others' not consistent with 6th ed. of the APA Manual
 Warning--`others' not consistent with 6th ed. of the APA Manual
@@ -21,46 +19,45 @@ Warning--`others' not consistent with 6th ed. of the APA Manual
 Warning--`others' not consistent with 6th ed. of the APA Manual
 Warning--`others' not consistent with 6th ed. of the APA Manual
 Warning--`others' not consistent with 6th ed. of the APA Manual
-Warning--`others' not consistent with 6th ed. of the APA Manual
-You've used 38 entries,
+You've used 37 entries,
             6951 wiz_defined-function locations,
-            1521 strings with 20746 characters,
-and the built_in function-call counts, 94816 in all, are:
-= -- 11792
-> -- 1008
-< -- 4458
-+ -- 4785
-- -- 93
-* -- 6058
-:= -- 16244
-add.period$ -- 180
-call.type$ -- 38
-change.case$ -- 716
+            1523 strings with 20880 characters,
+and the built_in function-call counts, 91839 in all, are:
+= -- 11353
+> -- 972
+< -- 4292
++ -- 4678
+- -- 86
+* -- 5834
+:= -- 15787
+add.period$ -- 176
+call.type$ -- 37
+change.case$ -- 651
 chr.to.int$ -- 0
-cite$ -- 76
-duplicate$ -- 2958
-empty$ -- 3503
-format.name$ -- 1775
-if$ -- 17949
+cite$ -- 74
+duplicate$ -- 2907
+empty$ -- 3409
+format.name$ -- 1715
+if$ -- 17321
 int.to.chr$ -- 0
-int.to.str$ -- 126
+int.to.str$ -- 111
 missing$ -- 0
-newline$ -- 1092
-num.names$ -- 308
-pop$ -- 1910
+newline$ -- 1065
+num.names$ -- 300
+pop$ -- 1940
 preamble$ -- 1
-purify$ -- 154
+purify$ -- 150
 quote$ -- 0
-skip$ -- 5940
+skip$ -- 5640
 stack$ -- 0
-substring$ -- 5335
-swap$ -- 1647
-text.length$ -- 200
+substring$ -- 5253
+swap$ -- 1615
+text.length$ -- 203
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 4392
-warning$ -- 7
-while$ -- 610
+type$ -- 4240
+warning$ -- 6
+while$ -- 601
 width$ -- 0
-write$ -- 1460
-(There were 8 warnings)
+write$ -- 1421
+(There were 6 warnings)

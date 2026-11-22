@@ -1,0 +1,773 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.10.22)  20 NOV 2026 23:13
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**main.tex
+(./main.tex
+LaTeX2e <2026-06-01>
+L3 programming layer <2026-09-09>
+(d:/texlive/2026/texmf-dist/tex/latex/base/report.cls
+Document Class: report 2025/01/22 v1.4n Standard LaTeX document class
+(d:/texlive/2026/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count276
+\c@chapter=\count277
+\c@section=\count278
+\c@subsection=\count279
+\c@subsubsection=\count280
+\c@paragraph=\count281
+\c@subparagraph=\count282
+\c@figure=\count283
+\c@table=\count284
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen150
+) (./preamble.tex
+(d:/texlive/2026/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2026/03/30 v0.6h Insert pages of external PDF documents (AM)
+
+(d:/texlive/2026/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
+)
+(d:/texlive/2026/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2025/03/01 v4.3b Infix arithmetic (KKT,FJ)
+\calc@Acount=\count285
+\calc@Bcount=\count286
+\calc@Adimen=\dimen151
+\calc@Bdimen=\dimen152
+\calc@Askip=\skip51
+\calc@Bskip=\skip52
+LaTeX Info: Redefining \setlength on input line 86.
+LaTeX Info: Redefining \addtolength on input line 87.
+\calc@Ccount=\count287
+\calc@Cskip=\skip53
+)
+(d:/texlive/2026/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2026/05/31 v3.0e eso-pic (RN)
+\ESO@tempdima=\dimen153
+\ESO@tempdimb=\dimen154
+
+(d:/texlive/2026/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2026-05-17 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+)
+(d:/texlive/2026/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+
+(d:/texlive/2026/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+
+(d:/texlive/2026/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
+)
+(d:/texlive/2026/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+))
+(d:/texlive/2026/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count288
+)
+(d:/texlive/2026/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2026-05-17 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
+
+(d:/texlive/2026/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2026-05-17 v1.4h Standard LaTeX Graphics (DPC,SPQR)
+
+(d:/texlive/2026/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+)
+(d:/texlive/2026/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 106.
+)
+\Gin@req@height=\dimen155
+\Gin@req@width=\dimen156
+)
+\AM@pagewidth=\dimen157
+\AM@pageheight=\dimen158
+\AM@fboxrule=\dimen159
+
+(d:/texlive/2026/texmf-dist/tex/latex/pdfpages/pppdftex.def
+File: pppdftex.def 2026/03/30 v0.6h Pdfpages driver for pdfTeX (AM)
+)
+\pdfpages@includegraphics@status=\count289
+\AM@pagebox=\box53
+\AM@global@opts=\toks18
+\AM@pagecnt=\count290
+\AM@toc@title=\toks19
+\AM@lof@heading=\toks20
+\c@AM@survey=\count291
+\AM@templatesizebox=\box54
+)
+(d:/texlive/2026/texmf-dist/tex/latex/apacite/apacite.sty
+Package: apacite 2013/07/21 v6.03 APA citation
+\c@BibCnt=\count292
+\bibleftmargin=\skip54
+\bibindent=\skip55
+\bibparsep=\skip56
+\bibitemsep=\skip57
+\biblabelsep=\skip58
+)
+(d:/texlive/2026/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2026/05/19 v2.18d AMS math features
+\@mathmargin=\skip59
+
+For additional information on amsmath, use the `?' option.
+(d:/texlive/2026/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2024/11/17 v2.01 AMS text
+
+(d:/texlive/2026/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks21
+\ex@=\dimen160
+))
+(d:/texlive/2026/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen161
+)
+(d:/texlive/2026/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count293
+LaTeX Info: Redefining \frac on input line 233.
+\uproot@=\count294
+\leftroot@=\count295
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count296
+\DOTSCASE@=\count297
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box55
+\strutbox@=\box56
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen162
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count298
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count299
+\dotsspace@=\muskip17
+\c@parentequation=\count300
+\dspbrk@lvl=\count301
+\tag@help=\toks22
+\row@=\count302
+\column@=\count303
+\maxfields@=\count304
+\andhelp@=\toks23
+\eqnshift@=\dimen163
+\alignsep@=\dimen164
+\tagshift@=\dimen165
+\tagwidth@=\dimen166
+\totwidth@=\dimen167
+\lineht@=\dimen168
+\@envbody=\toks24
+\multlinegap=\skip60
+\multlinetaggap=\skip61
+\mathdisplay@stack=\toks25
+LaTeX Info: Redefining \[ on input line 2965.
+LaTeX Info: Redefining \] on input line 2966.
+)
+(d:/texlive/2026/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+(d:/texlive/2026/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+)
+(d:/texlive/2026/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen169
+\lightrulewidth=\dimen170
+\cmidrulewidth=\dimen171
+\belowrulesep=\dimen172
+\belowbottomsep=\dimen173
+\aboverulesep=\dimen174
+\abovetopsep=\dimen175
+\cmidrulesep=\dimen176
+\cmidrulekern=\dimen177
+\defaultaddspace=\dimen178
+\@cmidla=\count305
+\@cmidlb=\count306
+\@aboverulesep=\dimen179
+\@belowrulesep=\dimen180
+\@thisruleclass=\count307
+\@lastruleclass=\count308
+\@thisrulewidth=\dimen181
+)
+(d:/texlive/2026/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2024-01-22 v1.5x LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks26
+\verbatim@line=\toks27
+\verbatim@in@stream=\read2
+)
+(d:/texlive/2026/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip18
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+(d:/texlive/2026/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
+\multirow@colwidth=\skip62
+\multirow@cntb=\count309
+\multirow@dima=\skip63
+\bigstrutjot=\dimen182
+))
+(d:/texlive/2026/texmf-dist/tex/latex/l3kernel/l3backend-pdftex.def
+File: l3backend-pdftex.def 2026-09-09 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count310
+)
+(./main_proposal.aux)
+\openout1 = `main_proposal.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+
+(d:/texlive/2026/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count311
+\scratchdimen=\dimen183
+\scratchbox=\box57
+\nofMPsegments=\count312
+\nofMParguments=\count313
+\everyMPshowfont=\toks28
+\MPscratchCnt=\count314
+\MPscratchDim=\dimen184
+\MPnumerator=\count315
+\makeMPintoPDFobject=\count316
+\everyMPtoPDFconversion=\toks29
+) (d:/texlive/2026/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(d:/texlive/2026/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+(d:/texlive/2026/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+Package: pdflscape 2025-06-23 v0.14 Display of landscape pages in PDF
+
+(d:/texlive/2026/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.sty
+Package: pdflscape-nometadata 2025-06-23 v0.14 Display of landscape pages in PD
+F (HO)
+
+(d:/texlive/2026/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2024/12/12 v1.0g TeX engine tests
+)
+(d:/texlive/2026/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+))
+\c@maskedRefs=\count317
+
+(d:/texlive/2026/texmf-dist/tex/latex/apacite/english.apc
+File: english.apc 2013/07/21 v6.03 apacite language file
+LaTeX Info: Redefining \BPBI on input line 129.
+LaTeX Info: Redefining \BHBI on input line 130.
+) (./title_page.tex
+[1
+
+{d:/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map}])
+(./abstract.tex
+LaTeX Font Info:    Trying to load font information for U+msa on input line 5.
+ (d:/texlive/2026/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 5.
+
+(d:/texlive/2026/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [1]) [2]
+(./main_proposal.toc [3
+
+] [4])
+\tf@toc=\write3
+\openout3 = `main_proposal.toc'.
+
+ [5] (./main_proposal.lof
+Overfull \hbox (0.15854pt too wide) in paragraph at lines 10--10
+ [][] []\OT1/cmr/m/n/12 Qualitative de-tec-tion and count-ing re-sults for YOLO
+v4 un-der struc- 
+ []
+
+)
+\tf@lof=\write4
+\openout4 = `main_proposal.lof'.
+
+ [6
+
+] (./main_proposal.lot)
+\tf@lot=\write5
+\openout5 = `main_proposal.lot'.
+
+ [7
+
+] (./chapter_1.tex
+Chapter 1.
+[1
+
+] [2] [3] [4]) (./chapter_2.tex [5]
+Chapter 2.
+[6
+
+] [7]) (./chapter_3.tex [8]
+Chapter 3.
+<yolov4_architecture.png, id=59, 3191.925pt x 1866.975pt>
+File: yolov4_architecture.png Graphic file (type png)
+<use yolov4_architecture.png>
+Package pdftex.def Info: yolov4_architecture.png  used on input line 26.
+(pdftex.def)             Requested size: 415.55249pt x 243.05713pt.
+[9
+
+]
+<yolo_architecture (1).png, id=64, 4456.65pt x 2409.0pt>
+File: yolo_architecture (1).png Graphic file (type png)
+<use yolo_architecture (1).png>
+Package pdftex.def Info: yolo_architecture (1).png  used on input line 33.
+(pdftex.def)             Requested size: 415.55249pt x 224.59341pt.
+<rtdetr_architecture (1).png, id=65, 4577.1pt x 2409.0pt>
+File: rtdetr_architecture (1).png Graphic file (type png)
+<use rtdetr_architecture (1).png>
+Package pdftex.def Info: rtdetr_architecture (1).png  used on input line 43.
+(pdftex.def)             Requested size: 415.55249pt x 218.71208pt.
+ [10 <./yolov4_architecture.png>] [11 <./yolo_architecture (1).png> <./rtdetr_a
+rchitecture (1).png>] [12] [13] [14] [15]
+LaTeX Font Info:    Trying to load font information for U+euf on input line 181
+.
+
+(d:/texlive/2026/texmf-dist/tex/latex/amsfonts/ueuf.fd
+File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
+) [16] [17{d:/texlive/2026/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
+}]
+<main_mosquito_iou_explainer.png, id=99, 901.9296pt x 234.6366pt>
+File: main_mosquito_iou_explainer.png Graphic file (type png)
+<use main_mosquito_iou_explainer.png>
+Package pdftex.def Info: main_mosquito_iou_explainer.png  used on input line 24
+9.
+(pdftex.def)             Requested size: 415.55249pt x 108.10599pt.
+ [18]) (./chapter_4.tex [19 <./main_mosquito_iou_explainer.png>]
+Chapter 4.
+[20
+
+] [21]
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 3
+5.
+ (d:/texlive/2026/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2024/11/19 v2.5n Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 35.
+ [22] [23]
+[24] [25] [26] [27]) (./chapter_5.tex [28]
+Chapter 5.
+(./tables/baseline_results.tex) (./tables/all_column_separated.tex) [29
+
+]
+[30] [31]
+<figures/mosquito_consep_sgc_conference_figure.png, id=149, 1725.8076pt x 1043.
+5788pt>
+File: figures/mosquito_consep_sgc_conference_figure.png Graphic file (type png)
+
+<use figures/mosquito_consep_sgc_conference_figure.png>
+Package pdftex.def Info: figures/mosquito_consep_sgc_conference_figure.png  use
+d on input line 55.
+(pdftex.def)             Requested size: 415.55249pt x 251.27614pt.
+ [32]
+Underfull \hbox (badness 3428) in paragraph at lines 72--72
+[]\OT1/cmr/m/n/12 Table 5.3: \OT1/cmr/bx/n/12 Dataset-averaged Know-ledge Dis-t
+il-la-tion per-for-mance
+ []
+
+(./tables/kd_summary_compact.tex) [33 <./figures/mosquito_consep_sgc_conference
+_figure.png>] [34]) (./appendix_A.tex [35]
+Appendix A.
+<clearance.pdf, id=164, 614.295pt x 794.97pt>
+File: clearance.pdf Graphic file (type pdf)
+<use clearance.pdf>
+Package pdftex.def Info: clearance.pdf  used on input line 33.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+<clearance.pdf, id=166, page=1, 614.295pt x 794.97pt>
+File: clearance.pdf Graphic file (type pdf)
+<use clearance.pdf, page 1>
+Package pdftex.def Info: clearance.pdf , page1 used on input line 33.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: clearance.pdf Graphic file (type pdf)
+<use clearance.pdf, page 1>
+Package pdftex.def Info: clearance.pdf , page1 used on input line 33.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+[36
+
+]
+File: clearance.pdf Graphic file (type pdf)
+<use clearance.pdf, page 1>
+Package pdftex.def Info: clearance.pdf , page1 used on input line 33.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+File: clearance.pdf Graphic file (type pdf)
+<use clearance.pdf, page 1>
+Package pdftex.def Info: clearance.pdf , page1 used on input line 33.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+File: clearance.pdf Graphic file (type pdf)
+<use clearance.pdf, page 1>
+Package pdftex.def Info: clearance.pdf , page1 used on input line 33.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+ [37
+
+ <./clearance.pdf>]
+<general_checklist.pdf, id=201, 614.295pt x 794.97pt>
+File: general_checklist.pdf Graphic file (type pdf)
+<use general_checklist.pdf>
+Package pdftex.def Info: general_checklist.pdf  used on input line 35.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+<general_checklist.pdf, id=203, page=1, 614.295pt x 794.97pt>
+File: general_checklist.pdf Graphic file (type pdf)
+<use general_checklist.pdf, page 1>
+Package pdftex.def Info: general_checklist.pdf , page1 used on input line 35.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: general_checklist.pdf Graphic file (type pdf)
+<use general_checklist.pdf, page 1>
+Package pdftex.def Info: general_checklist.pdf , page1 used on input line 35.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+File: general_checklist.pdf Graphic file (type pdf)
+<use general_checklist.pdf, page 1>
+Package pdftex.def Info: general_checklist.pdf , page1 used on input line 35.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+File: general_checklist.pdf Graphic file (type pdf)
+<use general_checklist.pdf, page 1>
+Package pdftex.def Info: general_checklist.pdf , page1 used on input line 35.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+File: general_checklist.pdf Graphic file (type pdf)
+<use general_checklist.pdf, page 1>
+Package pdftex.def Info: general_checklist.pdf , page1 used on input line 35.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+ [38
+
+ <./general_checklist.pdf>]
+<general_checklist.pdf, id=242, page=2, 614.295pt x 794.97pt>
+File: general_checklist.pdf Graphic file (type pdf)
+<use general_checklist.pdf, page 2>
+Package pdftex.def Info: general_checklist.pdf , page2 used on input line 35.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+File: general_checklist.pdf Graphic file (type pdf)
+<use general_checklist.pdf, page 2>
+Package pdftex.def Info: general_checklist.pdf , page2 used on input line 35.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+File: general_checklist.pdf Graphic file (type pdf)
+<use general_checklist.pdf, page 2>
+Package pdftex.def Info: general_checklist.pdf , page2 used on input line 35.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+ [39
+
+ <./general_checklist.pdf>]
+<general_checklist.pdf, id=249, page=3, 614.295pt x 794.97pt>
+File: general_checklist.pdf Graphic file (type pdf)
+<use general_checklist.pdf, page 3>
+Package pdftex.def Info: general_checklist.pdf , page3 used on input line 35.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+File: general_checklist.pdf Graphic file (type pdf)
+<use general_checklist.pdf, page 3>
+Package pdftex.def Info: general_checklist.pdf , page3 used on input line 35.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+File: general_checklist.pdf Graphic file (type pdf)
+<use general_checklist.pdf, page 3>
+Package pdftex.def Info: general_checklist.pdf , page3 used on input line 35.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+ [40
+
+ <./general_checklist.pdf>]
+<checklist-A.pdf, id=261, 614.295pt x 794.97pt>
+File: checklist-A.pdf Graphic file (type pdf)
+<use checklist-A.pdf>
+Package pdftex.def Info: checklist-A.pdf  used on input line 37.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+<checklist-A.pdf, id=263, page=1, 614.295pt x 794.97pt>
+File: checklist-A.pdf Graphic file (type pdf)
+<use checklist-A.pdf, page 1>
+Package pdftex.def Info: checklist-A.pdf , page1 used on input line 37.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: checklist-A.pdf Graphic file (type pdf)
+<use checklist-A.pdf, page 1>
+Package pdftex.def Info: checklist-A.pdf , page1 used on input line 37.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+File: checklist-A.pdf Graphic file (type pdf)
+<use checklist-A.pdf, page 1>
+Package pdftex.def Info: checklist-A.pdf , page1 used on input line 37.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+File: checklist-A.pdf Graphic file (type pdf)
+<use checklist-A.pdf, page 1>
+Package pdftex.def Info: checklist-A.pdf , page1 used on input line 37.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+File: checklist-A.pdf Graphic file (type pdf)
+<use checklist-A.pdf, page 1>
+Package pdftex.def Info: checklist-A.pdf , page1 used on input line 37.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+ [41
+
+ <./checklist-A.pdf>]
+<checklist-A.pdf, id=293, page=2, 614.295pt x 794.97pt>
+File: checklist-A.pdf Graphic file (type pdf)
+<use checklist-A.pdf, page 2>
+Package pdftex.def Info: checklist-A.pdf , page2 used on input line 37.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+File: checklist-A.pdf Graphic file (type pdf)
+<use checklist-A.pdf, page 2>
+Package pdftex.def Info: checklist-A.pdf , page2 used on input line 37.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+File: checklist-A.pdf Graphic file (type pdf)
+<use checklist-A.pdf, page 2>
+Package pdftex.def Info: checklist-A.pdf , page2 used on input line 37.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+ [42
+
+ <./checklist-A.pdf>]
+<checklist-A.pdf, id=318, page=3, 614.295pt x 794.97pt>
+File: checklist-A.pdf Graphic file (type pdf)
+<use checklist-A.pdf, page 3>
+Package pdftex.def Info: checklist-A.pdf , page3 used on input line 37.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+File: checklist-A.pdf Graphic file (type pdf)
+<use checklist-A.pdf, page 3>
+Package pdftex.def Info: checklist-A.pdf , page3 used on input line 37.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+File: checklist-A.pdf Graphic file (type pdf)
+<use checklist-A.pdf, page 3>
+Package pdftex.def Info: checklist-A.pdf , page3 used on input line 37.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+ [43
+
+ <./checklist-A.pdf>]
+<checklist-A.pdf, id=323, page=4, 614.295pt x 794.97pt>
+File: checklist-A.pdf Graphic file (type pdf)
+<use checklist-A.pdf, page 4>
+Package pdftex.def Info: checklist-A.pdf , page4 used on input line 37.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+File: checklist-A.pdf Graphic file (type pdf)
+<use checklist-A.pdf, page 4>
+Package pdftex.def Info: checklist-A.pdf , page4 used on input line 37.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+File: checklist-A.pdf Graphic file (type pdf)
+<use checklist-A.pdf, page 4>
+Package pdftex.def Info: checklist-A.pdf , page4 used on input line 37.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+ [44
+
+ <./checklist-A.pdf>]
+<checklist-A.pdf, id=328, page=5, 614.295pt x 794.97pt>
+File: checklist-A.pdf Graphic file (type pdf)
+<use checklist-A.pdf, page 5>
+Package pdftex.def Info: checklist-A.pdf , page5 used on input line 37.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+File: checklist-A.pdf Graphic file (type pdf)
+<use checklist-A.pdf, page 5>
+Package pdftex.def Info: checklist-A.pdf , page5 used on input line 37.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+File: checklist-A.pdf Graphic file (type pdf)
+<use checklist-A.pdf, page 5>
+Package pdftex.def Info: checklist-A.pdf , page5 used on input line 37.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+ [45
+
+ <./checklist-A.pdf>]
+<checklist-A.pdf, id=341, page=6, 614.295pt x 794.97pt>
+File: checklist-A.pdf Graphic file (type pdf)
+<use checklist-A.pdf, page 6>
+Package pdftex.def Info: checklist-A.pdf , page6 used on input line 37.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+File: checklist-A.pdf Graphic file (type pdf)
+<use checklist-A.pdf, page 6>
+Package pdftex.def Info: checklist-A.pdf , page6 used on input line 37.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+File: checklist-A.pdf Graphic file (type pdf)
+<use checklist-A.pdf, page 6>
+Package pdftex.def Info: checklist-A.pdf , page6 used on input line 37.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+ [46
+
+ <./checklist-A.pdf>]
+<checklist-A.pdf, id=369, page=7, 614.295pt x 794.97pt>
+File: checklist-A.pdf Graphic file (type pdf)
+<use checklist-A.pdf, page 7>
+Package pdftex.def Info: checklist-A.pdf , page7 used on input line 37.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+File: checklist-A.pdf Graphic file (type pdf)
+<use checklist-A.pdf, page 7>
+Package pdftex.def Info: checklist-A.pdf , page7 used on input line 37.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+File: checklist-A.pdf Graphic file (type pdf)
+<use checklist-A.pdf, page 7>
+Package pdftex.def Info: checklist-A.pdf , page7 used on input line 37.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+ [47
+
+ <./checklist-A.pdf>]
+<checklist-A.pdf, id=386, page=8, 614.295pt x 794.97pt>
+File: checklist-A.pdf Graphic file (type pdf)
+<use checklist-A.pdf, page 8>
+Package pdftex.def Info: checklist-A.pdf , page8 used on input line 37.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+File: checklist-A.pdf Graphic file (type pdf)
+<use checklist-A.pdf, page 8>
+Package pdftex.def Info: checklist-A.pdf , page8 used on input line 37.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+File: checklist-A.pdf Graphic file (type pdf)
+<use checklist-A.pdf, page 8>
+Package pdftex.def Info: checklist-A.pdf , page8 used on input line 37.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+ [48
+
+ <./checklist-A.pdf>]) (./appendix_B.tex
+Appendix B.
+) (./main_proposal.bbl [49
+
+] [50
+
+]
+Underfull \hbox (badness 1533) in paragraph at lines 311--330
+[]\OT1/cmr/m/n/12 Hamesse, S., et al.[]  (2023).  Ovi-t-rap mon-i-tor: On-line 
+ap-pli-ca-tion for
+ []
+
+
+Underfull \hbox (badness 1406) in paragraph at lines 311--330
+\OT1/cmr/m/n/12 count-ing mosquito eggs.  \OT1/cmr/m/it/12 Eco-log-i-cal In-for
+-mat-ics\OT1/cmr/m/n/12 , \OT1/cmr/m/it/12 75\OT1/cmr/m/n/12 , 102182.  Re-
+ []
+
+
+Underfull \hbox (badness 1931) in paragraph at lines 311--330
+\OT1/cmr/m/n/12 trieved from $\OT1/cmtt/m/n/12 https :// www [] .sciencedirect 
+[] .com / science / article / pii /
+ []
+
+
+Underfull \hbox (badness 1931) in paragraph at lines 342--361
+\OT1/cmr/m/n/12 trieved from $\OT1/cmtt/m/n/12 https :// www [] .sciencedirect 
+[] .com / science / article / pii /
+ []
+
+[51]
+Underfull \hbox (badness 5802) in paragraph at lines 778--803
+\OT1/cmr/m/n/12 Re-trieved from $\OT1/cmtt/m/n/12 https :// openaccess [] .thec
+vf [] .com / content / CVPR2023 /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 778--803
+\OT1/cmtt/m/n/12 papers / Tyagi [] []DeGPR [] []Deep [] []Guided [] []Posterior
+ [] []Regularization [] []for []
+ []
+
+[52]
+Underfull \hbox (badness 2856) in paragraph at lines 985--1006
+[]\OT1/cmr/m/n/12 Yang, C., Huang, Z., & Wang, N.  (2022).  Query-Det: Cas-cade
+d
+ []
+
+
+Underfull \hbox (badness 7649) in paragraph at lines 985--1006
+\OT1/cmr/m/n/12 sparse query for ac-cel-er-at-ing high-resolution small ob-ject
+ de-tec-
+ []
+
+
+Underfull \hbox (badness 3271) in paragraph at lines 985--1006
+\OT1/cmr/m/n/12 tion.  In \OT1/cmr/m/it/12 Pro-ceed-ings of the ieee/cvf con-fe
+r-ence on com-puter vi-
+ []
+
+
+Underfull \hbox (badness 2762) in paragraph at lines 985--1006
+\OT1/cmr/m/it/12 sion and pat-tern recog-ni-tion (cvpr) \OT1/cmr/m/n/12 (pp.[] 
+13668--13677).  Re-trieved
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 985--1006
+\OT1/cmr/m/n/12 from $\OT1/cmtt/m/n/12 https :// openaccess [] .thecvf [] .com 
+/ content / CVPR2022 / html /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 985--1006
+\OT1/cmtt/m/n/12 Yang [] []QueryDet [] []Cascaded [] []Sparse [] []Query [] []f
+or [] []Accelerating [] []High []
+ []
+
+) [53] (./main_proposal.aux)
+ ***********
+LaTeX2e <2026-06-01>
+L3 programming layer <2026-09-09>
+ ***********
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 5545 strings out of 467050
+ 84347 string characters out of 5410549
+ 529373 words of memory out of 5000000
+ 34792 multiletter control sequences out of 15000+600000
+ 640528 words of font info for 85 fonts, out of 8000000 for 9000
+ 1143 hyphenation exceptions out of 8191
+ 77i,18n,93p,1715b,470s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<d:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><d:/tex
+live/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><d:/texlive/2026
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><d:/texlive/2026/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><d:/texlive/2026/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmex10.pfb><d:/texlive/2026/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmmi12.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmmi6.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmmi8.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
+<d:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><d:/texliv
+e/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><d:/texlive/2026/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/texlive/2026/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmsy8.pfb><d:/texlive/2026/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmti12.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmtt12.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/eu
+ler/eufm10.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/symbols/
+msbm10.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb
+>
+Output written on main_proposal.pdf (61 pages, 21903952 bytes).
+PDF statistics:
+ 487 PDF objects out of 1000 (max. 8388607)
+ 332 compressed objects within 4 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 116 words of extra memory for PDF output out of 10000 (max. 10000000)
+

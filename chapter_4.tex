@@ -32,15 +32,15 @@ Since CoNSeP was originally developed as a nuclear segmentation dataset, the seg
 
 
 \subsection{Baseline Training}
-The YOLOv4, YOLOv8n, and RT-DETR models are initialized from COCO pretrained weights and fine-tuned on each dataset using standardized hyperparameters selected through systematic tuning. The configuration includes a learning rate of 0.001, momentum of 0.95, weight decay of 0.0001, an SGD optimizer, and 100 to 300 training epochs. Tuning explored learning rates of \{0.001, 0.005, 0.01\}, momentum values of \{0.9, 0.95, 0.97\}, weight decay values of \{0.0001, 0.0005, 0.001\}, and epoch counts of \{100, 150, 200, 250, 300\}. The configuration yielding the best validation performance was consistently selected for all models and datasets. All baseline training and initial measurements are conducted on a standard workstation equipped with a discrete GPU.
+The YOLOv4, YOLOv8, and RT-DETR models are initialized from COCO pretrained weights and fine-tuned on each dataset using standardized hyperparameters selected through systematic tuning. The configuration includes a learning rate of 0.001, momentum of 0.95, weight decay of 0.0001, an SGD optimizer, and 100 to 300 training epochs. Tuning explored learning rates of \{0.001, 0.005, 0.01\}, momentum values of \{0.9, 0.95, 0.97\}, weight decay values of \{0.0001, 0.0005, 0.001\}, and epoch counts of \{100, 150, 200, 250, 300\}. The configuration yielding the best validation performance was consistently selected for all models and datasets. All baseline training and initial measurements are conducted on a standard workstation equipped with a discrete GPU.
 
-\section{Development of the Multi-Step Compression Pipeline}
+\section[Development of the Multi-Step Compression Pipeline]{Development of the Multi-Step\\ Compression Pipeline}
 The second phase addresses the objective of systematically reducing model complexity while preserving counting accuracy. This is achieved through a multi-step pipeline integrating architecture-aware pruning, knowledge distillation, and quantization.
 
 \subsection{Architecture-Aware Structured Pruning}
 Structured pruning is applied according to the architectural decomposition of each model family to analyze the sensitivity of different modules within the detection pipeline. Channel-level structured pruning is used to remove entire convolutional filters based on $L_1$-norm magnitude ranking, identifying the least structurally important channels. 
 
-For YOLO-based models (YOLOv4 and YOLOv8n), pruning is applied to three primary components: the backbone for feature extraction, the neck for multi-scale aggregation, and the head for final predictions. For the transformer-based RT-DETR, pruning regions are defined by its specific components: the convolutional backbone, the transformer encoder-decoder layers, and the final prediction head. Pruning ratios of 20\%, 40\%, and 60\% are evaluated to study the effects of increasing compression levels. 
+For YOLO-based models (YOLOv4 and YOLOv8), pruning is applied to three primary components: the backbone for feature extraction, the neck for multi-scale aggregation, and the head for final predictions. For the transformer-based RT-DETR, pruning regions are defined by its specific components: the convolutional backbone, the transformer encoder-decoder layers, and the final prediction head. Pruning ratios of 20\%, 40\%, and 60\% are evaluated to study the effects of increasing compression levels. 
 
 \subsection{Multi-Module Pruning}
 In addition to isolating single modules, multi-module pruning is applied to evaluate the combined effects of removing parameters from multiple architectural components simultaneously. For YOLO-based models, combinations include backbone and neck, backbone and head, neck and head, as well as the full combination of all three. For RT-DETR, combinations include backbone and transformer layers, backbone and prediction head, transformer and head, and the full architectural stack. Each pruned configuration is subsequently fine-tuned for 10 epochs using the baseline hyperparameters to recover predictive performance.
@@ -61,7 +61,7 @@ $$
 \lambda_{feat}\mathcal{L}_{KD}^{feat},
 $$
 
-where $\mathcal{L}*{task}$ denotes the architecture-specific detection objective, $\mathcal{L}*{KD}^{resp}$ represents response-based distillation, and $\mathcal{L}_{KD}^{feat}$ represents feature-based distillation. The specific feature representation used for distillation differed according to the detector architecture.
+where $\mathcal{L}_{\mathrm{task}}$ denotes the architecture-specific detection objective, $\mathcal{L}_{\mathrm{KD}}^{resp}$ represents response-based distillation, and $\mathcal{L}_{\mathrm{KD}}^{feat}$ represents feature-based distillation. The specific feature representation used for distillation differed according to the detector architecture.
 
 \subsubsection{YOLO-Based Knowledge Distillation}
 
@@ -104,29 +104,29 @@ $$
 
 \subsection{Quantization}
 
-Following structured pruning and knowledge distillation, network quantization was applied as the final stage of the multi-step compression pipeline. Quantization reduces the numerical precision of the network parameters and intermediate activations from 32-bit floating-point ($\text{FP32}$) to 8-bit integer ($\text{INT8}$) representation[cite: 7, 10, 40]. This conversion reduces memory consumption by approximately 75\% and enables integer arithmetic execution on edge hardware platforms[cite: 9, 10, 40].
+Following structured pruning and knowledge distillation, network quantization was applied as the final stage of the multi-step compression pipeline. Quantization reduces the numerical precision of the network parameters and intermediate activations from 32-bit floating-point ($\text{FP32}$) to 8-bit integer ($\text{INT8}$) representation. This conversion reduces memory consumption by approximately 75\% and enables integer arithmetic execution on edge hardware platforms.
 
-To avoid the computational cost and hyperparameter sensitivity of full quantization-aware retraining, Post-Training Quantization (PTQ) was utilized[cite: 9, 40, 43]. The transformation of continuous tensor values $x$ into discrete quantized integers $q$ is defined by uniform linear quantization:
+To avoid the computational cost and hyperparameter sensitivity of full quantization\allowbreak -aware retraining, Post-Training Quantization (PTQ) was utilized. The transformation of continuous tensor values $x$ into discrete quantized integers $q$ is defined by uniform linear quantization:
 
 $$
 q = \text{clip}\left(\left\lfloor \frac{x}{S} \right\rceil + Z, \; q_{min}, \; q_{max}\right),
 $$
 
-where $S$ represents the scale factor, $Z$ denotes the zero-point integer offset, $\lfloor \cdot \rceil$ indicates the nearest rounding operation, and $[q_{min}, q_{max}]$ denotes the discrete integer range, defined as $[-128, 127]$ for signed $\text{INT8}$ or $[0, 255]$ for unsigned $\text{INT8}$[cite: 10, 41, 42]. During inference, the approximate floating-point values are recovered through dequantization:
+where $S$ represents the scale factor, $Z$ denotes the zero-point integer offset, $\lfloor \cdot \rceil$ indicates the nearest rounding operation, and $[q_{min}, q_{max}]$ denotes the discrete integer range, defined as $[-128, 127]$ for signed $\text{INT8}$ or $[0, 255]$ for unsigned $\text{INT8}$. During inference, the approximate floating-point values are recovered through dequantization:
 
 $$
 \hat{x} = S \cdot (q - Z).
 $$
 
-For static quantization, the dynamic ranges of intermediate activations were determined using a calibration set of representative images drawn from the training split[cite: 9, 40, 43]. Symmetric per-channel quantization was applied to the convolutional and linear weights to preserve directional fidelity, while asymmetric per-tensor calibration was utilized for activations to account for non-negative feature activations resulting from standard activation functions[cite: 41, 42].
+For static quantization, the dynamic ranges of intermediate activations were determined using a calibration set of representative images drawn from the training split. Symmetric per-channel quantization was applied to the convolutional and linear weights to preserve directional fidelity, while asymmetric per-tensor calibration was utilized for activations to account for non-negative feature activations resulting from standard activation functions.
 
 \subsubsection{YOLO-Based Quantization}
 
-For YOLOv4 and YOLOv8n, calibration was conducted across all convolutional modules, residual bottlenecks, and multi-scale concatenation nodes within the neck and head architectures[cite: 47, 48]. Special consideration was given to the feature aggregation layers, where disparate activation ranges from shallow and deep branches converge, ensuring that the calibrated scaling factors did not truncate the low-magnitude activation responses critical for small-object localization[cite: 44, 47].
+For YOLOv4 and YOLOv8, calibration was conducted across all convolutional modules, residual bottlenecks, and multi-scale concatenation nodes within the neck and head architectures. Special consideration was given to the feature aggregation layers, where disparate activation ranges from shallow and deep branches converge, ensuring that the calibrated scaling factors did not truncate the low-magnitude activation responses critical for small-object localization.
 
 \subsubsection{RT-DETR Quantization}
 
-For RT-DETR, quantization was applied to both the convolutional backbone and the linear projection modules of the transformer encoder-decoder[cite: 8, 54]. Linear layers within the multi-head self-attention and cross-attention blocks were quantized to $\text{INT8}$, while the softmax normalization and positional embeddings were retained in floating-point precision to avoid numerical instability in the attention score distributions[cite: 41, 51, 52].
+For RT-DETR, quantization was applied to both the convolutional backbone and the linear projection modules of the transformer encoder-decoder. Linear layers within the multi-head self-attention and cross-attention blocks were quantized to $\text{INT8}$, while the softmax normalization and positional embeddings were retained in floating-point precision to avoid numerical instability in the attention score distributions.
 
 \subsubsection{Quantization Performance Evaluation}
 
@@ -156,8 +156,10 @@ For the proposal, a Gantt chart showing the schedule of the activities should be
 
 Table \ref{tab:timetableactivities} shows a Gantt chart of the activities.  Each bullet represents approximately one week worth of activity.
 
-\begin{table}[]
+\begin{table}[htbp]
     \centering
+    \small
+    \setlength{\tabcolsep}{4pt}
     \begin{tabular}{l|c|c|c|c|c|c|c|c|c}
          \toprule
          & \multicolumn{6}{c|}{2021} & \multicolumn{3}{c}{2022} \\

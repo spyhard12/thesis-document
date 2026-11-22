@@ -98,7 +98,9 @@ Bochkovskiy, A.%
 
 \bibitem [\protect \citeauthoryear {%
 Bonnaerens%
-\ \protect \BOthers {.}}{%
+, Freiberger%
+\BCBL {}\ \BBA {} Dambre%
+}{%
 Bonnaerens%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2022}}%
@@ -108,7 +110,8 @@ Bonnaerens2022AnchorPruning}
 Bonnaerens2022AnchorPruning}%
 \begin{APACrefauthors}%
 Bonnaerens, M.%
-\BCBT {}\ \BOthersPeriod {.}
+, Freiberger, M.%
+\BCBL {}\ \BBA {} Dambre, J.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
@@ -118,11 +121,7 @@ Bonnaerens, M.%
   object detection}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Computer Vision and Image
-  Understanding}{223}{}{103523}.
-\newblock
-\begin{APACrefURL}
-  \url{https://www.sciencedirect.com/science/article/pii/S1077314222000601}
-  \end{APACrefURL}
+  Understanding}{221}{}{103445}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -202,43 +201,7 @@ Ding%
 Ding%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2024}}%
-{\protect \APACexlab {{\protect \BCnt {1}}}}}]{%
-Ding2024_RegPTQ}
-\APACinsertmetastar {%
-Ding2024_RegPTQ}%
-\begin{APACrefauthors}%
-Ding, Y.%
-, Feng, W.%
-, Chen, C.%
-, Guo, J.%
-\BCBL {}\ \BBA {} Liu, X.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2024{\protect \BCnt {1}}}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {Reg-PTQ: Regression-specialized Post-training
-  Quantization for Fully Quantized Object Detector} {Reg-ptq:
-  Regression-specialized post-training quantization for fully quantized object
-  detector}.{\BBCQ}
-\newblock
-\BIn{} \APACrefbtitle {Proceedings of the IEEE/CVF Conference on Computer
-  Vision and Pattern Recognition (CVPR)} {Proceedings of the ieee/cvf
-  conference on computer vision and pattern recognition (cvpr)}\ (\BPGS\
-  16174--16184).
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Ding%
-, Feng%
-, Chen%
-, Guo%
-\BCBL {}\ \BBA {} Liu%
-}{%
-Ding%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2024}}%
-{\protect \APACexlab {{\protect \BCnt {2}}}}}]{%
+}]{%
 ding2024regptq}
 \APACinsertmetastar {%
 ding2024regptq}%
@@ -251,16 +214,17 @@ Ding, Y.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYearMonthDay{2024{\protect \BCnt {2}}}{}{}.
+\APACrefYearMonthDay{2024}{}{}.
 \newblock
-{\BBOQ}\APACrefatitle {Reg-PTQ: Regression-specialized Post-training
-  Quantization for Fully Quantized Object Detector} {Reg-ptq:
+{\BBOQ}\APACrefatitle {{Reg-PTQ}: Regression-specialized Post-training
+  Quantization for Fully Quantized Object Detector} {{Reg-PTQ}:
   Regression-specialized post-training quantization for fully quantized object
   detector}.{\BBCQ}
 \newblock
 \BIn{} \APACrefbtitle {Proceedings of the IEEE/CVF Conference on Computer
-  Vision and Pattern Recognition} {Proceedings of the ieee/cvf conference on
-  computer vision and pattern recognition}\ (\BPGS\ 16174--16184).
+  Vision and Pattern Recognition (CVPR)} {Proceedings of the ieee/cvf
+  conference on computer vision and pattern recognition (cvpr)}\ (\BPGS\
+  16174--16184).
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -536,13 +500,43 @@ Li, H.%
 \newblock
 \APACrefYearMonthDay{2017}{}{}.
 \newblock
-{\BBOQ}\APACrefatitle {Pruning Filters for Efficient ConvNets} {Pruning filters
-  for efficient convnets}.{\BBCQ}
+{\BBOQ}\APACrefatitle {Pruning Filters for Efficient {ConvNets}} {Pruning
+  filters for efficient {ConvNets}}.{\BBCQ}
 \newblock
 \BIn{} \APACrefbtitle {International Conference on Learning Representations
   (ICLR).} {International conference on learning representations (iclr).}
 \newblock
 \begin{APACrefURL} \url{https://arxiv.org/abs/1608.08710} \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Lin%
+\ \protect \BOthers {.}}{%
+Lin%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2014}}%
+}]{%
+Lin2014COCO}
+\APACinsertmetastar {%
+Lin2014COCO}%
+\begin{APACrefauthors}%
+Lin, T\BHBI Y.%
+, Maire, M.%
+, Belongie, S.%
+, Hays, J.%
+, Perona, P.%
+, Ramanan, D.%
+\BDBL {}Zitnick, C\BPBI L.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2014}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Microsoft {COCO}: Common Objects in Context} {Microsoft
+  {COCO}: Common objects in context}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {European Conference on Computer Vision (ECCV)} {European
+  conference on computer vision (eccv)}\ (\BPGS\ 740--755).
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -566,8 +560,8 @@ Luo, J\BHBI H.%
 \newblock
 \APACrefYearMonthDay{2017}{}{}.
 \newblock
-{\BBOQ}\APACrefatitle {ThiNet: A Filter Level Pruning Method for Deep Neural
-  Network Compression} {Thinet: A filter level pruning method for deep neural
+{\BBOQ}\APACrefatitle {{ThiNet}: A Filter Level Pruning Method for Deep Neural
+  Network Compression} {{ThiNet}: A filter level pruning method for deep neural
   network compression}.{\BBCQ}
 \newblock
 \BIn{} \APACrefbtitle {International Conference on Computer Vision (ICCV)}
@@ -591,18 +585,19 @@ Nagel, M.%
 , Fournarakis, M.%
 , Amjad, R\BPBI A.%
 , Bondarenko, Y.%
-, Baalen, M\BPBI v.%
+, {van Baalen}, M.%
 \BCBL {}\ \BBA {} Blankevoort, T.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
 \APACrefYearMonthDay{2021}{}{}.
 \newblock
-{\BBOQ}\APACrefatitle {A White Paper on Neural Network Quantization for
-  Efficient Inference} {A white paper on neural network quantization for
-  efficient inference}.{\BBCQ}
+{\BBOQ}\APACrefatitle {A White Paper on Neural Network Quantization} {A white
+  paper on neural network quantization}.{\BBCQ}
 \newblock
-\APACjournalVolNumPages{arXiv preprint arXiv:2103.13630}{}{}{}.
+\APACjournalVolNumPages{arXiv preprint arXiv:2106.08295}{}{}{}.
+\newblock
+\begin{APACrefURL} \url{https://arxiv.org/abs/2106.08295} \end{APACrefURL}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -820,9 +815,9 @@ vicente2024aedesaegyptieggcounting}%
 Vicente, M\BPBI N\BPBI d\BPBI O.%
 , Higa, G\BPBI T\BPBI H.%
 , Porto, J\BPBI V\BPBI d\BPBI A.%
-, Henrique, H.%
-, Nucci, P.%
+, Nucci, H\BPBI H\BPBI P.%
 , Santana, A\BPBI B.%
+, Porto, K\BPBI R\BPBI d\BPBI A.%
 \BDBL {}Pistori, H.%
 \end{APACrefauthors}%
 \unskip\
@@ -898,8 +893,8 @@ Wei, Y.%
 \newblock
 \APACrefYearMonthDay{2018}{}{}.
 \newblock
-{\BBOQ}\APACrefatitle {Quantization Mimic: Towards Very Tiny CNN for Object
-  Detection} {Quantization mimic: Towards very tiny cnn for object
+{\BBOQ}\APACrefatitle {Quantization Mimic: Towards Very Tiny {CNN} for Object
+  Detection} {Quantization mimic: Towards very tiny {CNN} for object
   detection}.{\BBCQ}
 \newblock
 \BIn{} \APACrefbtitle {Proceedings of the European Conference on Computer
@@ -933,9 +928,9 @@ Xiao, G.%
 \newblock
 \APACrefYearMonthDay{2023}{}{}.
 \newblock
-{\BBOQ}\APACrefatitle {SmoothQuant: Accurate and Efficient Post-Training
-  Quantization for Large Language Models} {Smoothquant: Accurate and efficient
-  post-training quantization for large language models}.{\BBCQ}
+{\BBOQ}\APACrefatitle {{SmoothQuant}: Accurate and Efficient Post-Training
+  Quantization for Large Language Models} {{SmoothQuant}: Accurate and
+  efficient post-training quantization for large language models}.{\BBCQ}
 \newblock
 \BIn{} \APACrefbtitle {International Conference on Machine Learning.}
   {International conference on machine learning.}
@@ -947,39 +942,7 @@ Xu%
 Xu%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2023}}%
-{\protect \APACexlab {{\protect \BCnt {1}}}}}]{%
-Xu2023_QDETR}
-\APACinsertmetastar {%
-Xu2023_QDETR}%
-\begin{APACrefauthors}%
-Xu, S.%
-, Li, Y.%
-, Lin, M.%
-, Gao, P.%
-, Guo, G.%
-, L{\"u}, J.%
-\BCBL {}\ \BBA {} Zhang, B.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2023{\protect \BCnt {1}}}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {Q-DETR: An Efficient Low-Bit Quantized Detection
-  Transformer} {Q-detr: An efficient low-bit quantized detection
-  transformer}.{\BBCQ}
-\newblock
-\BIn{} \APACrefbtitle {Proceedings of the IEEE/CVF Conference on Computer
-  Vision and Pattern Recognition (CVPR).} {Proceedings of the ieee/cvf
-  conference on computer vision and pattern recognition (cvpr).}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Xu%
-\ \protect \BOthers {.}}{%
-Xu%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2023}}%
-{\protect \APACexlab {{\protect \BCnt {2}}}}}]{%
+}]{%
 xu2023qdetr}
 \APACinsertmetastar {%
 xu2023qdetr}%
@@ -994,21 +957,57 @@ Xu, S.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYearMonthDay{2023{\protect \BCnt {2}}}{}{}.
+\APACrefYearMonthDay{2023}{}{}.
 \newblock
-{\BBOQ}\APACrefatitle {Q-DETR: An Efficient Low-Bit Quantized Detection
-  Transformer} {Q-detr: An efficient low-bit quantized detection
+{\BBOQ}\APACrefatitle {{Q-DETR}: An Efficient Low-Bit Quantized Detection
+  Transformer} {{Q-DETR}: An efficient low-bit quantized detection
   transformer}.{\BBCQ}
 \newblock
 \BIn{} \APACrefbtitle {Proceedings of the IEEE/CVF Conference on Computer
-  Vision and Pattern Recognition} {Proceedings of the ieee/cvf conference on
-  computer vision and pattern recognition}\ (\BPGS\ 3842--3851).
+  Vision and Pattern Recognition (CVPR)} {Proceedings of the ieee/cvf
+  conference on computer vision and pattern recognition (cvpr)}\ (\BPGS\
+  3842--3851).
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Yang%
+C.~Yang%
+, Huang%
+\BCBL {}\ \BBA {} Wang%
+}{%
+C.~Yang%
 \ \protect \BOthers {.}}{%
-Yang%
+{\protect \APACyear {2022}}%
+}]{%
+Yang2022QueryDet}
+\APACinsertmetastar {%
+Yang2022QueryDet}%
+\begin{APACrefauthors}%
+Yang, C.%
+, Huang, Z.%
+\BCBL {}\ \BBA {} Wang, N.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2022}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{QueryDet}: Cascaded Sparse Query for Accelerating
+  High-Resolution Small Object Detection} {{QueryDet}: Cascaded sparse query
+  for accelerating high-resolution small object detection}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {Proceedings of the IEEE/CVF Conference on Computer
+  Vision and Pattern Recognition (CVPR)} {Proceedings of the ieee/cvf
+  conference on computer vision and pattern recognition (cvpr)}\ (\BPGS\
+  13668--13677).
+\newblock
+\begin{APACrefURL}
+  \url{https://openaccess.thecvf.com/content/CVPR2022/html/Yang_QueryDet_Cascaded_Sparse_Query_for_Accelerating_High-Resolution_Small_Object_Detection_CVPR_2022_paper.html}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Z.~Yang%
+\ \protect \BOthers {.}}{%
+Z.~Yang%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2022}}%
 }]{%
@@ -1033,7 +1032,7 @@ Yang, Z.%
 \newblock
 \BIn{} \APACrefbtitle {Proceedings of the IEEE/CVF Conference on Computer
   Vision and Pattern Recognition} {Proceedings of the ieee/cvf conference on
-  computer vision and pattern recognition}\ (\BPGS\ 4633--4642).
+  computer vision and pattern recognition}\ (\BPGS\ 4643--4652).
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1089,9 +1088,9 @@ Zhao, B.%
 \newblock
 \APACrefYearMonthDay{2026}{}{}.
 \newblock
-{\BBOQ}\APACrefatitle {FKDNuSeg: Flawless knowledge distillation for
+{\BBOQ}\APACrefatitle {{FKDNuSeg}: Flawless knowledge distillation for
   lightweight and fast nuclei instance segmentation and classification}
-  {Fkdnuseg: Flawless knowledge distillation for lightweight and fast nuclei
+  {{FKDNuSeg}: Flawless knowledge distillation for lightweight and fast nuclei
   instance segmentation and classification}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Medical Image Analysis}{112}{}{104089}.
@@ -1102,7 +1101,7 @@ Y.~Zhao%
 \ \protect \BOthers {.}}{%
 Y.~Zhao%
 \ \protect \BOthers {.}}{%
-{\protect \APACyear {2023}}%
+{\protect \APACyear {2024}}%
 }]{%
 Zhao2023RTDETR}
 \APACinsertmetastar {%
@@ -1118,12 +1117,15 @@ Zhao, Y.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYearMonthDay{2023}{}{}.
+\APACrefYearMonthDay{2024}{}{}.
 \newblock
-{\BBOQ}\APACrefatitle {DETRs Beat YOLOs on Real-time Object Detection} {Detrs
-  beat yolos on real-time object detection}.{\BBCQ}
+{\BBOQ}\APACrefatitle {{DETRs} Beat {YOLOs} on Real-time Object Detection}
+  {{DETRs} beat {YOLOs} on real-time object detection}.{\BBCQ}
 \newblock
-\APACjournalVolNumPages{arXiv preprint arXiv:2304.08069}{}{}{}.
+\BIn{} \APACrefbtitle {Proceedings of the IEEE/CVF Conference on Computer
+  Vision and Pattern Recognition (CVPR)} {Proceedings of the ieee/cvf
+  conference on computer vision and pattern recognition (cvpr)}\ (\BPGS\
+  16965--16974).
 \newblock
 \begin{APACrefURL} \url{https://arxiv.org/abs/2304.08069} \end{APACrefURL}
 \PrintBackRefs{\CurrentBib}
@@ -1169,40 +1171,7 @@ Zhu%
 Zhu%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2023}}%
-{\protect \APACexlab {{\protect \BCnt {1}}}}}]{%
-Zhu2023_ScaleKD}
-\APACinsertmetastar {%
-Zhu2023_ScaleKD}%
-\begin{APACrefauthors}%
-Zhu, Y.%
-, Zhou, Q.%
-, Liu, N.%
-, Xu, Z.%
-, Ou, Z.%
-, Mou, X.%
-\BCBL {}\ \BBA {} Tang, J.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2023{\protect \BCnt {1}}}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {ScaleKD: Distilling Scale-Aware Knowledge in Small
-  Object Detector} {Scalekd: Distilling scale-aware knowledge in small object
-  detector}.{\BBCQ}
-\newblock
-\BIn{} \APACrefbtitle {Proceedings of the IEEE/CVF Conference on Computer
-  Vision and Pattern Recognition (CVPR)} {Proceedings of the ieee/cvf
-  conference on computer vision and pattern recognition (cvpr)}\ (\BPGS\
-  19723--19733).
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Zhu%
-\ \protect \BOthers {.}}{%
-Zhu%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2023}}%
-{\protect \APACexlab {{\protect \BCnt {2}}}}}]{%
+}]{%
 zhu2023scalekd}
 \APACinsertmetastar {%
 zhu2023scalekd}%
@@ -1217,15 +1186,16 @@ Zhu, Y.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYearMonthDay{2023{\protect \BCnt {2}}}{}{}.
+\APACrefYearMonthDay{2023}{}{}.
 \newblock
-{\BBOQ}\APACrefatitle {ScaleKD: Distilling scale-aware knowledge in small
-  object detector} {Scalekd: Distilling scale-aware knowledge in small object
+{\BBOQ}\APACrefatitle {{ScaleKD}: Distilling Scale-Aware Knowledge in Small
+  Object Detector} {{ScaleKD}: Distilling scale-aware knowledge in small object
   detector}.{\BBCQ}
 \newblock
 \BIn{} \APACrefbtitle {Proceedings of the IEEE/CVF Conference on Computer
-  Vision and Pattern Recognition} {Proceedings of the ieee/cvf conference on
-  computer vision and pattern recognition}\ (\BPGS\ 19723--19733).
+  Vision and Pattern Recognition (CVPR)} {Proceedings of the ieee/cvf
+  conference on computer vision and pattern recognition (cvpr)}\ (\BPGS\
+  19723--19733).
 \PrintBackRefs{\CurrentBib}
 
 \end{thebibliography}
