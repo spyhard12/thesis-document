@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.10.22)  20 NOV 2026 23:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.10.22)  23 NOV 2026 02:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -346,46 +346,46 @@ Chapter 1.
 Chapter 2.
 [6
 
-] [7]) (./chapter_3.tex [8]
+] [7] [8]) (./chapter_3.tex [9]
 Chapter 3.
-<yolov4_architecture.png, id=59, 3191.925pt x 1866.975pt>
+<yolov4_architecture.png, id=62, 3191.925pt x 1866.975pt>
 File: yolov4_architecture.png Graphic file (type png)
 <use yolov4_architecture.png>
 Package pdftex.def Info: yolov4_architecture.png  used on input line 26.
 (pdftex.def)             Requested size: 415.55249pt x 243.05713pt.
-[9
+[10
 
 ]
-<yolo_architecture (1).png, id=64, 4456.65pt x 2409.0pt>
+<yolo_architecture (1).png, id=67, 4456.65pt x 2409.0pt>
 File: yolo_architecture (1).png Graphic file (type png)
 <use yolo_architecture (1).png>
 Package pdftex.def Info: yolo_architecture (1).png  used on input line 33.
 (pdftex.def)             Requested size: 415.55249pt x 224.59341pt.
-<rtdetr_architecture (1).png, id=65, 4577.1pt x 2409.0pt>
+<rtdetr_architecture (1).png, id=68, 4577.1pt x 2409.0pt>
 File: rtdetr_architecture (1).png Graphic file (type png)
 <use rtdetr_architecture (1).png>
 Package pdftex.def Info: rtdetr_architecture (1).png  used on input line 43.
 (pdftex.def)             Requested size: 415.55249pt x 218.71208pt.
- [10 <./yolov4_architecture.png>] [11 <./yolo_architecture (1).png> <./rtdetr_a
-rchitecture (1).png>] [12] [13] [14] [15]
+ [11 <./yolov4_architecture.png>] [12 <./yolo_architecture (1).png> <./rtdetr_a
+rchitecture (1).png>] [13] [14] [15] [16]
 LaTeX Font Info:    Trying to load font information for U+euf on input line 181
 .
 
 (d:/texlive/2026/texmf-dist/tex/latex/amsfonts/ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
-) [16] [17{d:/texlive/2026/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
+) [17] [18{d:/texlive/2026/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 }]
-<main_mosquito_iou_explainer.png, id=99, 901.9296pt x 234.6366pt>
+<main_mosquito_iou_explainer.png, id=102, 901.9296pt x 234.6366pt>
 File: main_mosquito_iou_explainer.png Graphic file (type png)
 <use main_mosquito_iou_explainer.png>
 Package pdftex.def Info: main_mosquito_iou_explainer.png  used on input line 24
 9.
 (pdftex.def)             Requested size: 415.55249pt x 108.10599pt.
- [18]) (./chapter_4.tex [19 <./main_mosquito_iou_explainer.png>]
+ [19]) (./chapter_4.tex [20 <./main_mosquito_iou_explainer.png>]
 Chapter 4.
-[20
+[21
 
-] [21]
+] [22]
 LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 3
 5.
  (d:/texlive/2026/texmf-dist/tex/latex/base/omscmr.fd
@@ -393,14 +393,19 @@ File: omscmr.fd 2024/11/19 v2.5n Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 35.
- [22] [23]
-[24] [25] [26] [27]) (./chapter_5.tex [28]
+ [23] [24]
+[25] [26] [27]
+Underfull \hbox (badness 10000) in paragraph at lines 154--154
+[]\OT1/cmr/m/n/10.95 Qualcomm Snap-dragon 8
+ []
+
+[28] [29]) (./chapter_5.tex [30]
 Chapter 5.
-(./tables/baseline_results.tex) (./tables/all_column_separated.tex) [29
+(./tables/baseline_results.tex) (./tables/all_column_separated.tex) [31
 
 ]
-[30] [31]
-<figures/mosquito_consep_sgc_conference_figure.png, id=149, 1725.8076pt x 1043.
+[32] [33]
+<figures/mosquito_consep_sgc_conference_figure.png, id=155, 1725.8076pt x 1043.
 5788pt>
 File: figures/mosquito_consep_sgc_conference_figure.png Graphic file (type png)
 
@@ -408,21 +413,21 @@ File: figures/mosquito_consep_sgc_conference_figure.png Graphic file (type png)
 Package pdftex.def Info: figures/mosquito_consep_sgc_conference_figure.png  use
 d on input line 55.
 (pdftex.def)             Requested size: 415.55249pt x 251.27614pt.
- [32]
+ [34]
 Underfull \hbox (badness 3428) in paragraph at lines 72--72
 []\OT1/cmr/m/n/12 Table 5.3: \OT1/cmr/bx/n/12 Dataset-averaged Know-ledge Dis-t
 il-la-tion per-for-mance
  []
 
-(./tables/kd_summary_compact.tex) [33 <./figures/mosquito_consep_sgc_conference
-_figure.png>] [34]) (./appendix_A.tex [35]
+(./tables/kd_summary_compact.tex) [35 <./figures/mosquito_consep_sgc_conference
+_figure.png>] [36]) (./appendix_A.tex [37]
 Appendix A.
-<clearance.pdf, id=164, 614.295pt x 794.97pt>
+<clearance.pdf, id=170, 614.295pt x 794.97pt>
 File: clearance.pdf Graphic file (type pdf)
 <use clearance.pdf>
 Package pdftex.def Info: clearance.pdf  used on input line 33.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-<clearance.pdf, id=166, page=1, 614.295pt x 794.97pt>
+<clearance.pdf, id=172, page=1, 614.295pt x 794.97pt>
 File: clearance.pdf Graphic file (type pdf)
 <use clearance.pdf, page 1>
 Package pdftex.def Info: clearance.pdf , page1 used on input line 33.
@@ -431,7 +436,7 @@ File: clearance.pdf Graphic file (type pdf)
 <use clearance.pdf, page 1>
 Package pdftex.def Info: clearance.pdf , page1 used on input line 33.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
-[36
+[38
 
 ]
 File: clearance.pdf Graphic file (type pdf)
@@ -446,15 +451,15 @@ File: clearance.pdf Graphic file (type pdf)
 <use clearance.pdf, page 1>
 Package pdftex.def Info: clearance.pdf , page1 used on input line 33.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
- [37
+ [39
 
  <./clearance.pdf>]
-<general_checklist.pdf, id=201, 614.295pt x 794.97pt>
+<general_checklist.pdf, id=207, 614.295pt x 794.97pt>
 File: general_checklist.pdf Graphic file (type pdf)
 <use general_checklist.pdf>
 Package pdftex.def Info: general_checklist.pdf  used on input line 35.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-<general_checklist.pdf, id=203, page=1, 614.295pt x 794.97pt>
+<general_checklist.pdf, id=209, page=1, 614.295pt x 794.97pt>
 File: general_checklist.pdf Graphic file (type pdf)
 <use general_checklist.pdf, page 1>
 Package pdftex.def Info: general_checklist.pdf , page1 used on input line 35.
@@ -474,48 +479,48 @@ Package pdftex.def Info: general_checklist.pdf , page1 used on input line 35.
 File: general_checklist.pdf Graphic file (type pdf)
 <use general_checklist.pdf, page 1>
 Package pdftex.def Info: general_checklist.pdf , page1 used on input line 35.
-(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
- [38
-
- <./general_checklist.pdf>]
-<general_checklist.pdf, id=242, page=2, 614.295pt x 794.97pt>
-File: general_checklist.pdf Graphic file (type pdf)
-<use general_checklist.pdf, page 2>
-Package pdftex.def Info: general_checklist.pdf , page2 used on input line 35.
-(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
-File: general_checklist.pdf Graphic file (type pdf)
-<use general_checklist.pdf, page 2>
-Package pdftex.def Info: general_checklist.pdf , page2 used on input line 35.
-(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
-File: general_checklist.pdf Graphic file (type pdf)
-<use general_checklist.pdf, page 2>
-Package pdftex.def Info: general_checklist.pdf , page2 used on input line 35.
-(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
- [39
-
- <./general_checklist.pdf>]
-<general_checklist.pdf, id=249, page=3, 614.295pt x 794.97pt>
-File: general_checklist.pdf Graphic file (type pdf)
-<use general_checklist.pdf, page 3>
-Package pdftex.def Info: general_checklist.pdf , page3 used on input line 35.
-(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
-File: general_checklist.pdf Graphic file (type pdf)
-<use general_checklist.pdf, page 3>
-Package pdftex.def Info: general_checklist.pdf , page3 used on input line 35.
-(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
-File: general_checklist.pdf Graphic file (type pdf)
-<use general_checklist.pdf, page 3>
-Package pdftex.def Info: general_checklist.pdf , page3 used on input line 35.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
  [40
 
  <./general_checklist.pdf>]
-<checklist-A.pdf, id=261, 614.295pt x 794.97pt>
+<general_checklist.pdf, id=248, page=2, 614.295pt x 794.97pt>
+File: general_checklist.pdf Graphic file (type pdf)
+<use general_checklist.pdf, page 2>
+Package pdftex.def Info: general_checklist.pdf , page2 used on input line 35.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+File: general_checklist.pdf Graphic file (type pdf)
+<use general_checklist.pdf, page 2>
+Package pdftex.def Info: general_checklist.pdf , page2 used on input line 35.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+File: general_checklist.pdf Graphic file (type pdf)
+<use general_checklist.pdf, page 2>
+Package pdftex.def Info: general_checklist.pdf , page2 used on input line 35.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+ [41
+
+ <./general_checklist.pdf>]
+<general_checklist.pdf, id=256, page=3, 614.295pt x 794.97pt>
+File: general_checklist.pdf Graphic file (type pdf)
+<use general_checklist.pdf, page 3>
+Package pdftex.def Info: general_checklist.pdf , page3 used on input line 35.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+File: general_checklist.pdf Graphic file (type pdf)
+<use general_checklist.pdf, page 3>
+Package pdftex.def Info: general_checklist.pdf , page3 used on input line 35.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+File: general_checklist.pdf Graphic file (type pdf)
+<use general_checklist.pdf, page 3>
+Package pdftex.def Info: general_checklist.pdf , page3 used on input line 35.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+ [42
+
+ <./general_checklist.pdf>]
+<checklist-A.pdf, id=268, 614.295pt x 794.97pt>
 File: checklist-A.pdf Graphic file (type pdf)
 <use checklist-A.pdf>
 Package pdftex.def Info: checklist-A.pdf  used on input line 37.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-<checklist-A.pdf, id=263, page=1, 614.295pt x 794.97pt>
+<checklist-A.pdf, id=270, page=1, 614.295pt x 794.97pt>
 File: checklist-A.pdf Graphic file (type pdf)
 <use checklist-A.pdf, page 1>
 Package pdftex.def Info: checklist-A.pdf , page1 used on input line 37.
@@ -536,125 +541,125 @@ File: checklist-A.pdf Graphic file (type pdf)
 <use checklist-A.pdf, page 1>
 Package pdftex.def Info: checklist-A.pdf , page1 used on input line 37.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
- [41
-
- <./checklist-A.pdf>]
-<checklist-A.pdf, id=293, page=2, 614.295pt x 794.97pt>
-File: checklist-A.pdf Graphic file (type pdf)
-<use checklist-A.pdf, page 2>
-Package pdftex.def Info: checklist-A.pdf , page2 used on input line 37.
-(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
-File: checklist-A.pdf Graphic file (type pdf)
-<use checklist-A.pdf, page 2>
-Package pdftex.def Info: checklist-A.pdf , page2 used on input line 37.
-(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
-File: checklist-A.pdf Graphic file (type pdf)
-<use checklist-A.pdf, page 2>
-Package pdftex.def Info: checklist-A.pdf , page2 used on input line 37.
-(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
- [42
-
- <./checklist-A.pdf>]
-<checklist-A.pdf, id=318, page=3, 614.295pt x 794.97pt>
-File: checklist-A.pdf Graphic file (type pdf)
-<use checklist-A.pdf, page 3>
-Package pdftex.def Info: checklist-A.pdf , page3 used on input line 37.
-(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
-File: checklist-A.pdf Graphic file (type pdf)
-<use checklist-A.pdf, page 3>
-Package pdftex.def Info: checklist-A.pdf , page3 used on input line 37.
-(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
-File: checklist-A.pdf Graphic file (type pdf)
-<use checklist-A.pdf, page 3>
-Package pdftex.def Info: checklist-A.pdf , page3 used on input line 37.
-(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
  [43
 
  <./checklist-A.pdf>]
-<checklist-A.pdf, id=323, page=4, 614.295pt x 794.97pt>
+<checklist-A.pdf, id=299, page=2, 614.295pt x 794.97pt>
 File: checklist-A.pdf Graphic file (type pdf)
-<use checklist-A.pdf, page 4>
-Package pdftex.def Info: checklist-A.pdf , page4 used on input line 37.
+<use checklist-A.pdf, page 2>
+Package pdftex.def Info: checklist-A.pdf , page2 used on input line 37.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 File: checklist-A.pdf Graphic file (type pdf)
-<use checklist-A.pdf, page 4>
-Package pdftex.def Info: checklist-A.pdf , page4 used on input line 37.
+<use checklist-A.pdf, page 2>
+Package pdftex.def Info: checklist-A.pdf , page2 used on input line 37.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 File: checklist-A.pdf Graphic file (type pdf)
-<use checklist-A.pdf, page 4>
-Package pdftex.def Info: checklist-A.pdf , page4 used on input line 37.
+<use checklist-A.pdf, page 2>
+Package pdftex.def Info: checklist-A.pdf , page2 used on input line 37.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
  [44
 
  <./checklist-A.pdf>]
-<checklist-A.pdf, id=328, page=5, 614.295pt x 794.97pt>
+<checklist-A.pdf, id=324, page=3, 614.295pt x 794.97pt>
 File: checklist-A.pdf Graphic file (type pdf)
-<use checklist-A.pdf, page 5>
-Package pdftex.def Info: checklist-A.pdf , page5 used on input line 37.
+<use checklist-A.pdf, page 3>
+Package pdftex.def Info: checklist-A.pdf , page3 used on input line 37.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 File: checklist-A.pdf Graphic file (type pdf)
-<use checklist-A.pdf, page 5>
-Package pdftex.def Info: checklist-A.pdf , page5 used on input line 37.
+<use checklist-A.pdf, page 3>
+Package pdftex.def Info: checklist-A.pdf , page3 used on input line 37.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 File: checklist-A.pdf Graphic file (type pdf)
-<use checklist-A.pdf, page 5>
-Package pdftex.def Info: checklist-A.pdf , page5 used on input line 37.
+<use checklist-A.pdf, page 3>
+Package pdftex.def Info: checklist-A.pdf , page3 used on input line 37.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
  [45
 
  <./checklist-A.pdf>]
-<checklist-A.pdf, id=341, page=6, 614.295pt x 794.97pt>
+<checklist-A.pdf, id=329, page=4, 614.295pt x 794.97pt>
 File: checklist-A.pdf Graphic file (type pdf)
-<use checklist-A.pdf, page 6>
-Package pdftex.def Info: checklist-A.pdf , page6 used on input line 37.
+<use checklist-A.pdf, page 4>
+Package pdftex.def Info: checklist-A.pdf , page4 used on input line 37.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 File: checklist-A.pdf Graphic file (type pdf)
-<use checklist-A.pdf, page 6>
-Package pdftex.def Info: checklist-A.pdf , page6 used on input line 37.
+<use checklist-A.pdf, page 4>
+Package pdftex.def Info: checklist-A.pdf , page4 used on input line 37.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 File: checklist-A.pdf Graphic file (type pdf)
-<use checklist-A.pdf, page 6>
-Package pdftex.def Info: checklist-A.pdf , page6 used on input line 37.
+<use checklist-A.pdf, page 4>
+Package pdftex.def Info: checklist-A.pdf , page4 used on input line 37.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
  [46
 
  <./checklist-A.pdf>]
-<checklist-A.pdf, id=369, page=7, 614.295pt x 794.97pt>
+<checklist-A.pdf, id=334, page=5, 614.295pt x 794.97pt>
 File: checklist-A.pdf Graphic file (type pdf)
-<use checklist-A.pdf, page 7>
-Package pdftex.def Info: checklist-A.pdf , page7 used on input line 37.
+<use checklist-A.pdf, page 5>
+Package pdftex.def Info: checklist-A.pdf , page5 used on input line 37.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 File: checklist-A.pdf Graphic file (type pdf)
-<use checklist-A.pdf, page 7>
-Package pdftex.def Info: checklist-A.pdf , page7 used on input line 37.
+<use checklist-A.pdf, page 5>
+Package pdftex.def Info: checklist-A.pdf , page5 used on input line 37.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 File: checklist-A.pdf Graphic file (type pdf)
-<use checklist-A.pdf, page 7>
-Package pdftex.def Info: checklist-A.pdf , page7 used on input line 37.
+<use checklist-A.pdf, page 5>
+Package pdftex.def Info: checklist-A.pdf , page5 used on input line 37.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
  [47
 
  <./checklist-A.pdf>]
-<checklist-A.pdf, id=386, page=8, 614.295pt x 794.97pt>
+<checklist-A.pdf, id=348, page=6, 614.295pt x 794.97pt>
 File: checklist-A.pdf Graphic file (type pdf)
-<use checklist-A.pdf, page 8>
-Package pdftex.def Info: checklist-A.pdf , page8 used on input line 37.
+<use checklist-A.pdf, page 6>
+Package pdftex.def Info: checklist-A.pdf , page6 used on input line 37.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 File: checklist-A.pdf Graphic file (type pdf)
-<use checklist-A.pdf, page 8>
-Package pdftex.def Info: checklist-A.pdf , page8 used on input line 37.
+<use checklist-A.pdf, page 6>
+Package pdftex.def Info: checklist-A.pdf , page6 used on input line 37.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 File: checklist-A.pdf Graphic file (type pdf)
-<use checklist-A.pdf, page 8>
-Package pdftex.def Info: checklist-A.pdf , page8 used on input line 37.
+<use checklist-A.pdf, page 6>
+Package pdftex.def Info: checklist-A.pdf , page6 used on input line 37.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
  [48
 
+ <./checklist-A.pdf>]
+<checklist-A.pdf, id=376, page=7, 614.295pt x 794.97pt>
+File: checklist-A.pdf Graphic file (type pdf)
+<use checklist-A.pdf, page 7>
+Package pdftex.def Info: checklist-A.pdf , page7 used on input line 37.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+File: checklist-A.pdf Graphic file (type pdf)
+<use checklist-A.pdf, page 7>
+Package pdftex.def Info: checklist-A.pdf , page7 used on input line 37.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+File: checklist-A.pdf Graphic file (type pdf)
+<use checklist-A.pdf, page 7>
+Package pdftex.def Info: checklist-A.pdf , page7 used on input line 37.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+ [49
+
+ <./checklist-A.pdf>]
+<checklist-A.pdf, id=392, page=8, 614.295pt x 794.97pt>
+File: checklist-A.pdf Graphic file (type pdf)
+<use checklist-A.pdf, page 8>
+Package pdftex.def Info: checklist-A.pdf , page8 used on input line 37.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+File: checklist-A.pdf Graphic file (type pdf)
+<use checklist-A.pdf, page 8>
+Package pdftex.def Info: checklist-A.pdf , page8 used on input line 37.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+File: checklist-A.pdf Graphic file (type pdf)
+<use checklist-A.pdf, page 8>
+Package pdftex.def Info: checklist-A.pdf , page8 used on input line 37.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+ [50
+
  <./checklist-A.pdf>]) (./appendix_B.tex
 Appendix B.
-) (./main.bbl [49
+) (./main.bbl [51
 
-] [50
+] [52
 
 ]
 Underfull \hbox (badness 1533) in paragraph at lines 311--330
@@ -680,7 +685,7 @@ Underfull \hbox (badness 1931) in paragraph at lines 342--361
 [] .com / science / article / pii /
  []
 
-[51]
+[53]
 Underfull \hbox (badness 5802) in paragraph at lines 778--803
 \OT1/cmr/m/n/12 Re-trieved from $\OT1/cmtt/m/n/12 https :// openaccess [] .thec
 vf [] .com / content / CVPR2023 /
@@ -692,7 +697,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 778--803
  [] []Regularization [] []for []
  []
 
-[52]
+[54]
 Underfull \hbox (badness 2856) in paragraph at lines 985--1006
 []\OT1/cmr/m/n/12 Yang, C., Huang, Z., & Wang, N.  (2022).  Query-Det: Cas-cade
 d
@@ -728,20 +733,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 985--1006
 or [] []Accelerating [] []High []
  []
 
-) [53] (./main.aux)
+) [55] (./main.aux)
  ***********
 LaTeX2e <2026-06-01>
 L3 programming layer <2026-09-09>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 5544 strings out of 467050
- 84073 string characters out of 5410549
- 529364 words of memory out of 5000000
- 34792 multiletter control sequences out of 15000+600000
+ 5545 strings out of 467050
+ 84089 string characters out of 5410549
+ 529391 words of memory out of 5000000
+ 34793 multiletter control sequences out of 15000+600000
  640528 words of font info for 85 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 77i,18n,93p,1715b,470s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 77i,18n,93p,1722b,470s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <d:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><d:/tex
 live/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><d:/texlive/2026
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><d:/texlive/2026/texmf-
@@ -759,10 +764,10 @@ sfonts/cm/cmtt12.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/eu
 ler/eufm10.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/symbols/
 msbm10.pfb><d:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb
 >
-Output written on main.pdf (61 pages, 21903944 bytes).
+Output written on main.pdf (63 pages, 21914219 bytes).
 PDF statistics:
- 487 PDF objects out of 1000 (max. 8388607)
- 332 compressed objects within 4 object streams
+ 493 PDF objects out of 1000 (max. 8388607)
+ 336 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
  116 words of extra memory for PDF output out of 10000 (max. 10000000)
 

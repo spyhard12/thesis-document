@@ -32,7 +32,7 @@ Since CoNSeP was originally developed as a nuclear segmentation dataset, the seg
 
 
 \subsection{Baseline Training}
-The YOLOv4, YOLOv8, and RT-DETR models are initialized from COCO pretrained weights and fine-tuned on each dataset using standardized hyperparameters selected through systematic tuning. The configuration includes a learning rate of 0.001, momentum of 0.95, weight decay of 0.0001, an SGD optimizer, and 100 to 300 training epochs. Tuning explored learning rates of \{0.001, 0.005, 0.01\}, momentum values of \{0.9, 0.95, 0.97\}, weight decay values of \{0.0001, 0.0005, 0.001\}, and epoch counts of \{100, 150, 200, 250, 300\}. The configuration yielding the best validation performance was consistently selected for all models and datasets. All baseline training and initial measurements are conducted on a standard workstation equipped with a discrete GPU.
+The YOLOv4 \cite{Bochkovskiy2020YOLOv4}, YOLOv8 \cite{yolov8}, and RT-DETR \cite{Zhao2023RTDETR} models are initialized from COCO pretrained weights and fine-tuned on each dataset using standardized hyperparameters selected through systematic tuning. The configuration includes a learning rate of 0.001, momentum of 0.95, weight decay of 0.0001, an SGD optimizer, and 100 to 300 training epochs. Tuning explored learning rates of \{0.001, 0.005, 0.01\}, momentum values of \{0.9, 0.95, 0.97\}, weight decay values of \{0.0001, 0.0005, 0.001\}, and epoch counts of \{100, 150, 200, 250, 300\}. The configuration yielding the best validation performance was consistently selected for all models and datasets. All baseline training and initial measurements are conducted on a standard workstation equipped with a discrete GPU.
 
 \section[Development of the Multi-Step Compression Pipeline]{Development of the Multi-Step\\ Compression Pipeline}
 The second phase addresses the objective of systematically reducing model complexity while preserving counting accuracy. This is achieved through a multi-step pipeline integrating architecture-aware pruning, knowledge distillation, and quantization.
@@ -100,7 +100,7 @@ mAP_{Baseline}-mAP_{Pruned}
 \times100\%.
 $$
 
-
+where $mAP_{KD}$, $mAP_{Pruned}$, and $mAP_{Baseline}$ denote the mAP50 of the pruned student after knowledge distillation, the pruned model before distillation (after fine-tuning), and the original unpruned model, respectively.
 
 \subsection{Quantization}
 
@@ -122,7 +122,7 @@ For static quantization, the dynamic ranges of intermediate activations were det
 
 \subsubsection{YOLO-Based Quantization}
 
-For YOLOv4 and YOLOv8, calibration was conducted across all convolutional modules, residual bottlenecks, and multi-scale concatenation nodes within the neck and head architectures. Special consideration was given to the feature aggregation layers, where disparate activation ranges from shallow and deep branches converge, ensuring that the calibrated scaling factors did not truncate the low-magnitude activation responses critical for small-object localization.
+For YOLOv4 and YOLOv8, calibration was conducted across all convolutional modules, residual bottlenecks, and multi-scale concatenation nodes within the neck and head architectures. Special consideration will be given to the feature aggregation layers (the Concat nodes of the neck), where shallow, high-magnitude features merge with deep, low-magnitude semantic features. At each Concat node, all input branches and the output will share a single scale and zero-point so that concatenation can be performed in integer arithmetic. Because a shared scale allows the high-magnitude branch to dominate the activation range, ranges at these nodes will be estimated using percentile calibration instead of MinMax, preventing outliers from truncating the low-magnitude responses that are critical for small-object localization. If quantizing a given Concat node alone causes an mAP50 drop greater than 1.0 percentage point relative to the pre-quantization model on the validation split, that node will be retained in FP16.
 
 \subsubsection{RT-DETR Quantization}
 
@@ -141,12 +141,33 @@ where $mAP_{Pre-Quant}$ denotes the performance of the corresponding model prior
 \section{Edge Hardware Deployment and Testing}
 The third phase addresses the objective of testing the optimized models directly on resource-constrained hardware. To ensure practical relevance, the compressed models are exported to edge-compatible formats and deployed entirely locally.
 
-Testing is conducted on two distinct hardware profiles: a Samsung mobile phone and a Raspberry Pi single-board computer. The evaluation strictly relies on on-device processing capabilities, operating completely offline without the requirement of an active internet connection or a supplementary cloud environment. By ensuring that no image data or inference tasks are offloaded to external servers, this localized testing methodology verifies the robustness of the compression pipeline in fully isolated scenarios. This approach facilitates the accurate measurement of realistic device processing bottlenecks while operating under hardware constraints.
+Testing is conducted on two distinct hardware profiles: a Samsung mobile phone and a Raspberry Pi single-board computer. The evaluation strictly relies on on-device processing capabilities, operating completely offline without the requirement of an active internet connection or a supplementary cloud environment. By ensuring that no image data or inference tasks are offloaded to external servers, this localized testing methodology verifies the robustness of the compression pipeline in fully isolated scenarios. This approach facilitates the accurate measurement of realistic device processing bottlenecks while operating under hardware constraints. The hardware specifications of the two edge devices and the inference runtime are summarized in Table~\ref{tab:edge-specs}.
+
+\begin{table}[htbp]
+    \centering
+    \small
+    \begin{tabular}{p{2.6cm}p{4.9cm}p{5.5cm}}
+        \toprule
+        \textbf{Specification} & \textbf{Mobile Device} & \textbf{Single-Board Computer} \\
+        \midrule
+        Device & Samsung Galaxy S22 Ultra & Raspberry Pi 5 \\
+        SoC/CPU & Qualcomm Snapdragon 8 Gen 1 & Broadcom BCM2712, quad-core Arm Cortex-A76 at 2.4 GHz \\
+        RAM & 12 GB & 4 GB \\
+        OS & Android 16 (One UI 8.0) & Raspberry Pi OS (64-bit) \\
+        Runtime & ONNX Runtime, CPU execution provider & ONNX Runtime, CPU execution provider \\
+        Threads & 4 & 4 \\
+        \bottomrule
+    \end{tabular}
+    \caption{Hardware specifications of the edge devices and inference runtime.}
+    \label{tab:edge-specs}
+\end{table}
+
+All models will be exported to ONNX and executed with ONNX Runtime on the CPU execution provider of both devices, with a fixed thread count, warm-up iterations before timing, and results averaged over many runs. Employing a single runtime for all three architectures (YOLOv4, YOLOv8, and RT-DETR) and both devices will ensure that measured latency differences come from the compression pipeline rather than from runtime differences. In addition, ONNX supports transformer operators such as RT-DETR's attention layers more reliably than TFLite conversion, and ONNX Runtime's static INT8 quantization supports calibration datasets, symmetric per-channel weights, asymmetric activations, and percentile calibration, matching the planned quantization pipeline in Section 4.2.4. Finally, CPU-only execution will avoid confounding results with device-specific GPU/NPU delegates.
 
 \section{Evaluation and Trade-off Analysis}
 The final phase addresses the objective of evaluating the trade-offs between model size, inference speed, and detection reliability. 
 
-Detection reliability is quantified using Mean Average Precision (mAP) and Intersection over Union (IoU) metrics, measuring the model's ability to retain spatial features and accurate bounding box coordinates despite heavy compression. Model complexity is measured by the total parameter count and the physical file size in megabytes. Finally, computational efficiency and latency are measured in Frames Per Second (FPS) and milliseconds per inference on the target edge devices.
+Detection reliability is quantified using Mean Average Precision (mAP) and Intersection over Union (IoU) metrics, measuring the model's ability to retain spatial features and accurate bounding box coordinates despite heavy compression. Counting accuracy is evaluated using Mean Absolute Error (MAE) of the object counts and Pearson's $r$, measuring the absolute discrepancy and correlation between predicted counts and ground-truth totals. Model complexity is measured by the total parameter count and the physical file size in megabytes. Finally, computational efficiency and latency are measured in Frames Per Second (FPS) and milliseconds per inference on the target edge devices.
 
 These metrics are used to map the explicit trade-offs between accuracy degradation and latency improvements. This analysis provides a structured evaluation of which compression configurations yield the most viable deployment parameters for specific real-world operational constraints.
 

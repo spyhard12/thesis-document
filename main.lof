@@ -1,12 +1,12 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces YOLOv4 architecture}}{10}{}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces YOLOv8 architecture}}{11}{}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces RT-DETR architecture}}{11}{}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Illustration of IoU on Aedes egg dataset}}{19}{}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces YOLOv4 architecture}}{11}{}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces YOLOv8 architecture}}{12}{}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces RT-DETR architecture}}{12}{}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Illustration of IoU on Aedes egg dataset}}{20}{}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Qualitative detection and counting results for YOLOv4 under structured pruning}}{33}{}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Qualitative detection and counting results for YOLOv4 under structured pruning}}{35}{}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }

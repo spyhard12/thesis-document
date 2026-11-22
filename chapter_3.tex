@@ -266,6 +266,18 @@ Precision quantifies the accuracy of the positive predictions, while Recall quan
 \end{equation}
 Mean Average Precision (mAP) is subsequently derived by calculating the mean of the AP values across all defined object classes, providing a comprehensive single-value metric for overall model reliability.
 
+In addition to detection metrics, counting accuracy is evaluated to assess how reliably the models quantify object totals across dense images. Mean Absolute Error (MAE) measures the average magnitude of absolute counting errors:
+\begin{equation}
+\mathrm{MAE} = \frac{1}{N} \sum_{i=1}^{N} |\hat{c}_i - c_i|,
+\end{equation}
+where $\hat{c}_i$ is the predicted count and $c_i$ the ground-truth count for image $i$, and $N$ is the total number of images.
+
+To evaluate the linear relationship between predicted and true counts, Pearson's correlation coefficient ($r$) is calculated as:
+\begin{equation}
+r = \frac{\sum_{i=1}^{N} (\hat{c}_i - \bar{\hat{c}})(c_i - \bar{c})}{\sqrt{\sum_{i=1}^{N} (\hat{c}_i - \bar{\hat{c}})^2 \sum_{i=1}^{N} (c_i - \bar{c})^2}},
+\end{equation}
+where $\bar{\hat{c}}$ and $\bar{c}$ denote the mean predicted and ground-truth counts across all images, respectively.
+
 
 
 
